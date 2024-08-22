@@ -2,8 +2,10 @@ import Lottie from "lottie-react";
 import blinkingAnimation from "../assets/blinkingAnimation.json";
 import myPicture from "../assets/me.jpg";
 import Marquee from "react-fast-marquee";
-import bulletImg from "../assets/bullet.png";
 import backgroundImage from "../assets/background.svg";
+import ProjectItem from "./ProjectItem";
+import MarqueeItem from "./MarqueeItem";
+import NavbarListItem from "./NavBarListItem";
 
 function Home() {
     return (
@@ -17,15 +19,9 @@ function Home() {
                     </div>
                 </div>
                 <div className="w-1/2 flex-row flex justify-end items-center">
-                    <div className="px-4 text-xl h-3/5 font-display rounded-3xl hover:bg-gray-800 hover:text-white transition duration-200 ease-in-out cursor-pointer flex items-center mx-3">
-                        About
-                    </div>
-                    <div className="px-4 text-xl h-3/5 font-display rounded-3xl hover:bg-gray-800 hover:text-white transition duration-200 ease-in-out cursor-pointer flex items-center mx-3">
-                        Works
-                    </div>
-                    <div className="px-4 text-xl h-3/5 font-display rounded-3xl hover:bg-gray-800 hover:text-white transition duration-200 ease-in-out cursor-pointer flex items-center mx-3">
-                        Contact
-                    </div>
+                    <NavbarListItem label="About" />
+                    <NavbarListItem label="Works" />
+                    <NavbarListItem label="Contact" />
                 </div>
             </div>
 
@@ -51,18 +47,9 @@ function Home() {
                             <p>SELECTED PROJECTS</p>
                         </div>
                         <div className="mt-6 text-3xl font-display">
-                            <p className="py-8 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group">
-                                DocuTalk
-                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-                            </p>
-                            <p className="py-8 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group">
-                                GetToWork
-                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-                            </p>
-                            <p className="py-8 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group">
-                                FoodieAI
-                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-                            </p>
+                            <ProjectItem name={"DocuTalk"} />
+                            <ProjectItem name={"GetToWork"} />
+                            <ProjectItem name={"FoodieAI"} />
                         </div>
                     </div>
                 </div>
@@ -70,13 +57,10 @@ function Home() {
 
             {/* Footer Marquee */}
             <div className="h-20 w-full bg-[#DFFF9C] flex justify-center items-center">
-                <Marquee className="flex flex-row font-display justify-between text-2xl font-bold" autoFill={true}>
-                    <p className="px-8">Based in Windsor, ON</p>
-                    <img src={bulletImg} className="h-5 w-5 rounded-full object-cover mx-2" alt="Bullet"/>
-                    <p className="px-8">3+ years of experience</p>
-                    <img src={bulletImg} className="h-5 w-5 rounded-full object-cover mx-2" alt="Bullet"/>
-                    <p className="px-8">Brewing Digital Solutions</p>
-                    <img src={bulletImg} className="h-5 w-5 rounded-full object-cover mx-2" alt="Bullet"/>
+                <Marquee autoFill={true}>
+                    <MarqueeItem label="Based in Windsor, ON" />
+                    <MarqueeItem label="3+ years of experience" />
+                    <MarqueeItem label="Brewing Digital Solutions" />
                 </Marquee>
             </div>
         </div>
