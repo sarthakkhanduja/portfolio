@@ -53,7 +53,7 @@ export default {
       grotesk: ["Hanken Grotesk", ...defaultTheme.fontFamily.sans],
     },
     fontWeight: {
-      custom: "450",
+      custom: "550",
     },
     backgroundPosition: {
       "bottom-md": "center bottom 17px",
