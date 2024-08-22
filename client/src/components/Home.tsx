@@ -41,8 +41,27 @@ function Home() {
                     </div>
 
                 </div>
-                <div className="bg-pink-100 w-2/5 flex items-center justify-center">
-                    Side hero
+                <div className="w-2/5 flex justify-start p-36">
+                    <div className="w-full">
+                        <div className="font-display text-2xl tracking-wider text-gray-500">
+                            <p>SELECTED PROJECTS</p>
+                        </div>
+                        <div className="mt-6 text-3xl font-display">
+                            <p className="py-8 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group">
+                                DocuTalk
+                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                            </p>
+                            <p className="py-8 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group">
+                                GetToWork
+                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                            </p>
+                            <p className="py-8 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group">
+                                FoodieAI
+                                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
