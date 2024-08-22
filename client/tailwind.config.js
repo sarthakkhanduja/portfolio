@@ -51,6 +51,7 @@ export default {
     fontFamily: {
       display: ["Inter", ...defaultTheme.fontFamily.sans],
       grotesk: ["Hanken Grotesk", ...defaultTheme.fontFamily.sans],
+      mono: ["Source Code Pro", ...defaultTheme.fontFamily.sans],
     },
     fontWeight: {
       custom: "550",
