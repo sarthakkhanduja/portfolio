@@ -3,10 +3,11 @@ import blinkingAnimation from "../assets/blinkingAnimation.json";
 import myPicture from "../assets/me.jpg";
 import Marquee from "react-fast-marquee";
 import bulletImg from "../assets/bullet.png";
+import backgroundImage from "../assets/background.svg";
 
 function Home() {
     return (
-        <div className="w-full h-screen flex flex-col">
+        <div className="w-full h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
             {/* Navbar */}
             <div className="h-24 w-full py-4 px-16 flex flex-row">
                 <div className="w-1/2 flex justify-start">
@@ -35,17 +36,14 @@ function Home() {
                         <p className="text-[10rem] font-display font-custom">I'm Sarthak</p>
                         <p className="text-[10rem] font-display font-custom -mt-24">Khanduja.</p>
                     </div>
-                    <div className="w-[30%] flex flex-row justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-300 ease-in-out hover:bg-green-100 hover:cursor-default">
+                    <div className="w-[30%] flex flex-row justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-800 ease-in-out hover:cursor-default animate-background">
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
                         <p className="text-xl font-grotesk font-custom ml-1">available for opportunities</p>
                     </div>
                     <div className="mt-16">
                         <p className="text-7xl font-display">Transforming ideas into reality,</p>
-                        {/* <p className="text-7xl font-display mt-4">one line of <span className="bg-gray-600 text-red-400 text-6xl rounded-2xl px-2 font-mono">{`<code>`}</span> at a time.</p> */}
                         <p className="text-7xl font-display mt-4">one line of code at a time.</p>
-
                     </div>
-
                 </div>
                 <div className="w-2/5 flex justify-start p-36">
                     <div className="w-full">
@@ -66,7 +64,6 @@ function Home() {
                                 <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>

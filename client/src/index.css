@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes backgroundColorChange {
+    0% {
+      background-color: #FFFFFF; /* Initial color */
+    }
+    50% {
+      background-color: #CEFAD0; /* Intermediate color */
+      background-position: 100% 0;
+    }
+    100% {
+      background-color: #FFFFFF; /* Back to initial color */
+      background-position: -100% 0;
+    }
+  }
+  
+  .animate-background {
+    animation: backgroundColorChange 2.5s ease-in-out infinite;
+  }
+  
