@@ -1,12 +1,12 @@
 import myPicture from "../assets/me.jpg";
 import gradCap from "../assets/graduationCap.svg";
-import ProjectItem from "./ProjectItem";
 
 type AboutProps = {
     onClose: () => void;
 };
 
 function About({ onClose }: AboutProps) {
+
     return (
         <div className="fixed top-0 right-0 w-3/5 h-screen overflow-y-auto bg-white shadow-lg px-2 z-50">
             <div className="h-48 flex flex-row justify-between items-center">
@@ -71,17 +71,43 @@ function About({ onClose }: AboutProps) {
             </div>
 
             <div className="h-auto my-14 flex flex-row items-center justify-start text-4xl font-display font-custom">
-                <div className="mx-8">
-                    <ProjectItem name="LinkedIn" />
+            <div className="mx-8">
+                    <p className="py-2 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group"
+                       onClick={() => {
+                        window.open("https://linkedin.com/in/sarthakkhanduja");
+                    }}>
+                        LinkedIn
+                        <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                    </p>
                 </div>
                 <div className="mx-8">
-                    <ProjectItem name="GitHub" />
+                    <p
+                        className="py-2 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group"
+                        onClick={() => {
+                            window.open("https://github.com/sarthakkhanduja");
+                        }}>
+                        GitHub
+                        <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                    </p>
+                </div>
+
+                <div className="mx-8">
+                    <p className="py-2 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group"
+                    onClick={() => {
+                        window.open("https://drive.google.com/file/d/1GCXRkqO9-9pRNCO58R7M3HGZQasqlCu0/view?usp=sharing");
+                    }}>
+                        Resume
+                        <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                    </p>
                 </div>
                 <div className="mx-8">
-                    <ProjectItem name="Resume" />
-                </div>
-                <div className="mx-8">
-                    <ProjectItem name="Email" />
+                    <p className="py-2 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group"
+                    onClick={() => {
+                        window.open("mailto:sarthakkhanduja98@gmail.com");
+                    }}>
+                        Email
+                        <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+                    </p>
                 </div>
             </div>
         </div>
