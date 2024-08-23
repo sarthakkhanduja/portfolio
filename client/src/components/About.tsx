@@ -34,16 +34,17 @@ function About({ onClose }: AboutProps) {
 
             {/* Initial head text */}
             <div className="h-auto mx-8 mt-12 font-display text-5xl font-custom flex flex-row items-center">
-                <p>A recent </p>
-                <div className="pl-2 pr-6 mx-2 font-display rounded-3xl border-[1px] border-black inline-flex items-center justify-center w-auto hover:bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
-                    <img src={gradCap} className="size-12 mr-2"></img>
+                <p>A recent</p>
+                <span className="pl-2 pr-6 mx-2 font-display rounded-3xl border-[1px] border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    <img src={gradCap} className="size-12 mr-2" alt="Graduation cap" />
                     Master's graduate
-                </div>
+                </span>
                 <p>with</p>
-            </div>
-            <div className="h-auto mx-8 font-display text-5xl font-custom">
+                </div>
+                <div className="h-auto mx-8 font-display text-5xl font-custom">
                 <p>experience in large-scale FMCG corporates and fast-paced startups.</p>
             </div>
+
 
             {/* Additional content sections */}
 
@@ -53,21 +54,49 @@ function About({ onClose }: AboutProps) {
             </div>
 
             {/* USP */}
-            <div className="h-auto mx-8 mt-20 font-display flex flex-col">
+            <div className="h-auto mx-8 mt-24 font-display flex flex-col">
                 <p className="text-5xl font-custom">Unique Selling Point</p>
-                <p className="text-4xl mt-6 text-gray-500 font-semibold">I sincerely believe Adaptability is a skill that can be honed to perfection. Be it for hard skills, or work cultures - I'm flexible enough to adapt.</p>
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">
+                    I sincerely believe
+                    <span className="px-2 mx-2 font-display rounded-3xl border-[1px] text-black border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    Adaptability
+                    </span>
+                    is a skill that can be honed to perfection. Be it for hard skills, or work cultures - I'm flexible enough to adapt.
+                </p>
             </div>
+
 
             {/* Brewing Digital Solutions */}
             <div className="h-auto mx-8 mt-20 font-display flex flex-col">
                 <p className="text-5xl font-custom">Brewing Digital Solutions</p>
-                <p className="text-4xl mt-6 text-gray-500 font-semibold">Whether I'm developing software for a global audience or crafting tailored applications for a niche market, my focus remains on delivering impactful results that make a difference.</p>
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">Whether I'm developing software for a global audience or crafting tailored applications for a niche market, my focus remains on 
+                <span className="px-2 mx-2 font-display rounded-3xl border-[1px] text-black border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    delivering impactful results
+                </span>
+                that make a difference.</p>
             </div>
 
             {/* Availability */}
             <div className="h-auto mx-8 mt-20 font-display flex flex-col">
                 <p className="text-5xl font-custom">Available for Opportunities</p>
-                <p className="text-4xl mt-6 text-gray-500 font-semibold">I'm currently on the lookout for Software Engineer or Backend Developer roles. <br></br>I'm also available as a freelancer, so if you have a project up for grabs, I'm ready to roll up my sleeves and get to work.</p>
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">
+                    I'm currently on the lookout for
+                    <span className="px-2 mx-2 font-display rounded-3xl border-[1px] text-black border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    Software Engineer
+                    </span>
+                    or
+                    <span className="px-2 mx-2 font-display rounded-3xl border-[1px] text-black border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    Backend Developer
+                    </span>
+                    roles. <br />
+                    I'm also available as a freelancer, so if you have a project up for grabs, I'm ready to roll up my sleeves and get to work.
+                </p>
+            </div>
+
+
+            {/* Let's Connect */}
+            <div className="h-auto mx-8 mt-8 font-display flex flex-col">
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">Let's connect!</p>
             </div>
 
             <div className="h-auto my-14 flex flex-row items-center justify-start text-4xl font-display font-custom">
