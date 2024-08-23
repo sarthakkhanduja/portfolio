@@ -10,9 +10,13 @@ import { useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Works from "./Works";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
+
     const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
+
 
     const handleClose = () => {
         setActiveComponent(null);  // Close the active component
@@ -23,7 +27,9 @@ function Home() {
             {/* Navbar */}
             <div className="h-28 w-full py-4 px-16 flex flex-row">
                 <div className="w-1/2 flex justify-start">
-                    <div className="h-full flex flex-row justify-center items-center cursor-pointer">
+                    <div className="h-full flex flex-row justify-center items-center cursor-pointer" onClick={() => {
+                        navigate('/#');
+                    }}>
                         <img src={myPicture} className="h-8 w-8 rounded-full object-cover mx-2" alt="My Picture"/>
                         <h5 className="font-display text-xl">sarthakkhanduja.</h5>
                     </div>
@@ -74,7 +80,7 @@ function Home() {
                 </Marquee>
             </div>
 
-            {/* Conditionally render the About component */}
+            {/* Conditionally render the active component */}
             {activeComponent && (
                 <div className="absolute top-0 right-0 w-3/5 h-full bg-white z-10 p-8 ease-in-out duration-1600">
                     {activeComponent}

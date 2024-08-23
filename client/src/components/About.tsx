@@ -1,4 +1,6 @@
 import myPicture from "../assets/me.jpg";
+import gradCap from "../assets/graduationCap.svg";
+import ProjectItem from "./ProjectItem";
 
 type AboutProps = {
     onClose: () => void;
@@ -6,22 +8,81 @@ type AboutProps = {
 
 function About({ onClose }: AboutProps) {
     return (
-        <div className="p-2">
+        <div className="fixed top-0 right-0 w-3/5 h-screen overflow-y-auto bg-white shadow-lg px-2 z-50">
             <div className="h-48 flex flex-row justify-between items-center">
                 <div>
                     <img src={myPicture} className="size-24 rounded-full object-cover mx-8" alt="My Picture" />
                 </div>
                 <div>
                     <button 
-                        onClick={onClose} // Call the onClose function when clicked
+                        onClick={onClose}
                         className="mx-4 p-4 w-36 rounded-[2rem] border-[1px] border-black text-2xl font-display font-custom hover:bg-black hover:text-white ease-in duration-100"
                     >
                         Close
                     </button>
                 </div>
             </div>
-            <div className="h-36">
-                {/* Additional content */}
+            {/* More content here */}
+            <div className="h-16 flex flex-row justify-start items-center mx-8">
+                <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
+                    SOFTWARE ENGINEER
+                </div>
+                <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
+                    BACKEND DEVELOPER
+                </div>
+            </div>
+
+            {/* Initial head text */}
+            <div className="h-auto mx-8 mt-12 font-display text-5xl font-custom flex flex-row items-center">
+                <p>A recent </p>
+                <div className="pl-2 pr-6 mx-2 font-display rounded-3xl border-[1px] border-black inline-flex items-center justify-center w-auto hover:bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    <img src={gradCap} className="size-12 mr-2"></img>
+                    Master's graduate
+                </div>
+                <p>with</p>
+            </div>
+            <div className="h-auto mx-8 font-display text-5xl font-custom">
+                <p>experience in large-scale FMCG corporates and fast-paced startups.</p>
+            </div>
+
+            {/* Additional content sections */}
+
+            {/* Second text */}
+            <div className="h-auto mx-8 mt-20 font-display text-5xl font-custom flex flex-row items-center">
+                <p>I'm always eager to dive into new domains and technologies, investing the time and effort needed to master them.</p>
+            </div>
+
+            {/* USP */}
+            <div className="h-auto mx-8 mt-20 font-display flex flex-col">
+                <p className="text-5xl font-custom">Unique Selling Point</p>
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">I sincerely believe Adaptability is a skill that can be honed to perfection. Be it for hard skills, or work cultures - I'm flexible enough to adapt.</p>
+            </div>
+
+            {/* Brewing Digital Solutions */}
+            <div className="h-auto mx-8 mt-20 font-display flex flex-col">
+                <p className="text-5xl font-custom">Brewing Digital Solutions</p>
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">Whether I'm developing software for a global audience or crafting tailored applications for a niche market, my focus remains on delivering impactful results that make a difference.</p>
+            </div>
+
+            {/* Availability */}
+            <div className="h-auto mx-8 mt-20 font-display flex flex-col">
+                <p className="text-5xl font-custom">Available for Opportunities</p>
+                <p className="text-4xl mt-6 text-gray-500 font-semibold">I'm currently on the lookout for Software Engineer or Backend Developer roles. <br></br>I'm also available as a freelancer, so if you have a project up for grabs, I'm ready to roll up my sleeves and get to work.</p>
+            </div>
+
+            <div className="h-auto my-14 flex flex-row items-center justify-start text-4xl font-display font-custom">
+                <div className="mx-8">
+                    <ProjectItem name="LinkedIn" />
+                </div>
+                <div className="mx-8">
+                    <ProjectItem name="GitHub" />
+                </div>
+                <div className="mx-8">
+                    <ProjectItem name="Resume" />
+                </div>
+                <div className="mx-8">
+                    <ProjectItem name="Email" />
+                </div>
             </div>
         </div>
     );
