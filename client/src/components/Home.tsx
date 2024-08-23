@@ -6,27 +6,37 @@ import backgroundImage from "../assets/background.svg";
 import ProjectItem from "./ProjectItem";
 import MarqueeItem from "./MarqueeItem";
 import NavbarListItem from "./NavBarListItem";
+import { useState } from "react"; 
+import About from "./About";
+import Contact from "./Contact";
+import Works from "./Works";
 
 function Home() {
+    const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
+
+    const handleClose = () => {
+        setActiveComponent(null);  // Close the active component
+    };
+
     return (
         <div className="w-full h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
             {/* Navbar */}
-            <div className="h-24 w-full py-4 px-16 flex flex-row">
+            <div className="h-28 w-full py-4 px-16 flex flex-row">
                 <div className="w-1/2 flex justify-start">
                     <div className="h-full flex flex-row justify-center items-center cursor-pointer">
                         <img src={myPicture} className="h-8 w-8 rounded-full object-cover mx-2" alt="My Picture"/>
                         <h5 className="font-display text-xl">sarthakkhanduja.</h5>
                     </div>
                 </div>
-                <div className="w-1/2 flex-row flex justify-end items-center">
-                    <NavbarListItem label="About" />
-                    <NavbarListItem label="Works" />
-                    <NavbarListItem label="Contact" />
+                <div className="w-1/2 flex-row flex justify-end items-center mr-10">
+                    <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
+                    <NavbarListItem label="Works" onClick={() => setActiveComponent(<Works />)} />
+                    <NavbarListItem label="Contact" onClick={() => setActiveComponent(<Contact />)} />
                 </div>
             </div>
 
             {/* Main Content */}
-            <div className="flex-grow flex flex-row w-full">
+            <div className={`flex-grow flex flex-row w-full transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
                 <div className="flex flex-col pl-16 pb-16 w-3/5">
                     <div className="flex flex-col pb-8 -mt-12">
                         <p className="text-[10rem] font-display font-custom">I'm Sarthak</p>
@@ -56,13 +66,20 @@ function Home() {
             </div>
 
             {/* Footer Marquee */}
-            <div className="h-20 w-full bg-[#DFFF9C] flex justify-center items-center">
+            <div className={`h-20 w-full bg-[#DFFF9C] flex justify-center items-center transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
                 <Marquee autoFill={true}>
                     <MarqueeItem label="Based in Windsor, ON" />
                     <MarqueeItem label="3+ years of experience" />
                     <MarqueeItem label="Brewing Digital Solutions" />
                 </Marquee>
             </div>
+
+            {/* Conditionally render the About component */}
+            {activeComponent && (
+                <div className="absolute top-0 right-0 w-3/5 h-full bg-white z-10 p-8 ease-in-out duration-1600">
+                    {activeComponent}
+                </div>
+            )}
         </div>
     );
 }
