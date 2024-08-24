@@ -1,8 +1,11 @@
 import { useState } from "react";
+import DevInternModal from "./DevInternModal";
 
 function Timeline() {
     // State to track if each element is hovered, initialized with an array of false values.
     const [hovered, setHovered] = useState<boolean[]>([false, false, false, false, false]);
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
 
     const onHovering = (index: number) => {
         // Toggle the hover state for the specific item
@@ -11,20 +14,29 @@ function Timeline() {
         );
     };
 
+    const toggleModal = () => {
+        setIsModalVisible(!isModalVisible);
+    };
+
+    const closeModal = () => {
+        setIsModalVisible(false);
+    };
+
     return (
-        <div className="">
-            <div className="h-48 w-full p-16 font-display font-custom text-7xl">
+        <div className="z-50">
+            <div className={`h-48 w-full p-16 font-display font-custom text-7xl ${isModalVisible ? 'blur-xl' : ''}`}>
                 <p>Experience</p>
             </div>
 
-            <div className="h-full w-full py-32 px-16 font-display">
+            <div className={`h-full w-full py-32 px-16 font-display ${isModalVisible ? 'blur-xl' : ''}`}>
                 {/* Timeline */}
-                <ol className="relative flex after:content-[''] after:absolute after:w-full after:h-1 after:bg-gray-200 after:top-[21%] after:left-0">
+                <ol className="relative flex after:content-[''] after:absolute after:w-full after:h-1 after:bg-gray-200 after:top-[25%] after:left-0">
 
                     {/* AB InBev, Internship */}
                     <li
                         onMouseEnter={() => onHovering(0)}
                         onMouseLeave={() => onHovering(0)}
+                        onClick={toggleModal}
                         className={`relative flex flex-col items-center mb-10 w-1/5 transition-transform duration-300 hover:scale-105 hover:cursor-pointer ${hovered[0] ? 'scale-105' : ''}`}
                     >
                         {/* Date at the top */}
@@ -117,6 +129,14 @@ function Timeline() {
                     </li>
                 </ol>
             </div>
+
+            {/* Render the modal conditionally */}
+            {isModalVisible && (
+                <div className="fixed inset-0 flex items-center justify-center z-60 w-full" onClick={closeModal}>
+                    <div className="absolute inset-0"></div>
+                    <DevInternModal />
+                </div>
+            )}
         </div>
     );
 }

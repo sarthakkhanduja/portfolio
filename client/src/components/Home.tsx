@@ -11,6 +11,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Works from "./Works";
 import { useNavigate } from "react-router-dom";
+import Timeline from "./Timeline";
 
 function Home() {
     const navigate = useNavigate();
@@ -87,6 +88,7 @@ function Home() {
                 </div>
             )}
         </div>
+        
     );
 }
 

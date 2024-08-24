@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Timeline from './components/Timeline';
+import DevInternModal from './components/DevInternModal';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/works" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/timeline" element={<Timeline />} />
+          <Route path="/modal" element={<DevInternModal />} />
         </Routes>
       </HashRouter>
     </div>
