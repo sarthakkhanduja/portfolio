@@ -28,7 +28,7 @@ function Home() {
             <div className="h-28 w-full py-4 px-16 flex flex-row">
                 <div className="w-1/2 flex justify-start">
                     <div className="h-full flex flex-row justify-center items-center cursor-pointer" onClick={() => {
-                        navigate('/#');
+                        navigate('/');
                     }}>
                         <img src={myPicture} className="h-8 w-8 rounded-full object-cover mx-2" alt="My Picture"/>
                         <h5 className="font-display text-xl">sarthakkhanduja.</h5>
