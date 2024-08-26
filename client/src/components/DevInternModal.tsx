@@ -81,7 +81,7 @@ function DevInternModal() {
                         </div>
                     </div>
 
-                    
+                    {/* Content starts here */}
                     <div className="p-8 font-display text-3xl text-gray-500">
                         <p>In the penultimate year of my undergraduate education, I landed an internship at AB InBev for the role of a Developer, Intern.</p>
                         <p className="mt-2">I gained experience in <span className="w-fit text-black self-start px-4 py-1 mt-1 font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-3xl font-custom tracking-wide">
