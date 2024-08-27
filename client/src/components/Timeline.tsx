@@ -132,11 +132,11 @@ function Timeline() {
 
             {/* Render the modal conditionally */}
             {isModalVisible && (
-                <div className="fixed inset-0 flex items-center justify-center z-60 w-full" onClick={closeModal}>
-                    <div className="absolute inset-0"></div>
-                    <DevInternModal />
+                <div className="fixed inset-0 flex items-center justify-center z-70 w-full">
+                    <DevInternModal closeModal={closeModal} />
                 </div>
             )}
+            
         </div>
     );
 }

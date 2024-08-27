@@ -1,6 +1,10 @@
 import locationPin from "../assets/location.svg";
 
-function DevInternModal() {
+interface DevInternModalProps {
+    closeModal: () => void;
+  }
+
+function DevInternModal({ closeModal }: DevInternModalProps) {
     return (
         <div className="flex items-start justify-center min-h-screen p-4">
             <div className="w-3/4 my-16 border-black border-[1px] rounded-3xl shadow-2xl">
@@ -20,6 +24,7 @@ function DevInternModal() {
                             <button
                                 type="button"
                                 className="bg-white p-2 inline-flex items-center justify-center rounded-full text-gray-400 hover:text-white hover:bg-black focus:outline-none"
+                                onClick={closeModal}
                             >
                                 <span className="sr-only">Close menu</span>
                                 <svg
