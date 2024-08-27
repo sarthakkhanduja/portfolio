@@ -3,7 +3,8 @@ import Home from './components/Home';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Timeline from './components/Timeline';
-import DevInternModal from './components/DevInternModal';
+// import DevInternModal from './components/DevInternModal';
+// import SeniorAnalystModal from './components/SeniorAnalystModal';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
           <Route path="/works" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/timeline" element={<Timeline />} />
-          <Route path="/modal" element={<DevInternModal />} />
+          {/* <Route path="/modal" element={<SeniorAnalystModal />} /> */}
         </Routes>
       </HashRouter>
     </div>
