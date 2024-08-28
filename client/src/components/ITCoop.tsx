@@ -14,7 +14,7 @@ function ITCoop({ closeModal }: ITCoopProps) {
                         <div className="flex flex-col justify-start font-display p-8 w-3/5">
                             <p className="text-6xl font-custom">IT Services Delivery, Co-op</p>
                             <div className="w-fit self-start px-4 py-1 mt-1 font-display rounded-3xl border-[1px] border-black bg-[#ffc0bc] hover:cursor-default ease-in-out duration-200 text-4xl font-custom tracking-wide">
-                                Pernod Ricard, Hiram Walker and Sons
+                                Hiram Walker and Sons, Pernod Ricard
                             </div>
                         </div>
 

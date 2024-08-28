@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 import Timeline from "./Timeline";
 
 function Home() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
 
@@ -28,9 +28,10 @@ function Home() {
             {/* Navbar */}
             <div className="h-28 w-full py-4 px-16 flex flex-row">
                 <div className="w-1/2 flex justify-start">
-                    <div className="h-full flex flex-row justify-center items-center cursor-pointer" onClick={() => {
+                    {/* <div className="h-full flex flex-row justify-center items-center cursor-pointer" onClick={() => {
                         navigate('/');
-                    }}>
+                    }}> */}
+                    <div className="h-full flex flex-row justify-center items-center cursor-pointer">
                         <img src={myPicture} className="h-8 w-8 rounded-full object-cover mx-2" alt="My Picture"/>
                         <h5 className="font-display text-xl">sarthakkhanduja.</h5>
                     </div>

@@ -9,16 +9,21 @@ import Timeline from './components/Timeline';
 function App() {
 
   return (
-    <div>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/timeline" element={<Timeline />} />
-          {/* <Route path="/modal" element={<SeniorAnalystModal />} /> */}
-        </Routes>
-      </HashRouter>
+    // <div>
+    //   <HashRouter>
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/works" element={<Works />} />
+    //       <Route path="/contact" element={<Contact />} />
+    //       <Route path="/timeline" element={<Timeline />} />
+    //       {/* <Route path="/modal" element={<SeniorAnalystModal />} /> */}
+    //     </Routes>
+    //   </HashRouter>
+    // </div>
+
+    <div className="relative h-screen w-full overflow-y-scroll">
+        <Home />
+        <Timeline />
     </div>
   )
 }

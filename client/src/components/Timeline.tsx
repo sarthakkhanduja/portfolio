@@ -32,7 +32,7 @@ function Timeline() {
     };
 
     return (
-        <div className="z-50">
+        <div className="h-screen flex flex-col justify-center items-center">
             <div className={`h-48 w-full p-16 font-display font-custom text-7xl ${isDevInternModalVisible ? 'blur-xl' : ''} ${isSeniorAnalystModalVisible ? 'blur-xl' : ''} ${isIFiveOContract ? 'blur-xl' : ''} ${isIFiveOCoop ? 'blur-xl' : ''} ${isITCoop ? 'blur-xl' : ''}`}>
                 <p>Experience</p>
             </div>
