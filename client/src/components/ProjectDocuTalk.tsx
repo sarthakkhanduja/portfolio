@@ -55,13 +55,13 @@ function ProjectDocuTalk() {
                         RAG - RETRIEVAL AUGMENTED GENERATION
                     </div>
                     <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-500 hover:cursor-default ease-in-out duration-200">
-                        GENERATIVE AI
+                        OPENAI
                     </div>
                     <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-500 hover:cursor-default ease-in-out duration-200">
                         PYTHON
                     </div>
                     <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-500 hover:cursor-default ease-in-out duration-200">
-                        DEEP LEARNING
+                        LLMs - LARGE LANGUAGE MODELS
                     </div>
                 </div>
 

@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Timeline from './components/Timeline';
 import Project from './components/ProjectDocuTalk';
 import ProjectGetToWork from './components/ProjectGetToWork';
+import ProjectFoodieAI from './components/ProjectFoodieAI';
 // import DevInternModal from './components/DevInternModal';
 // import SeniorAnalystModal from './components/SeniorAnalystModal';
 
@@ -28,6 +29,7 @@ function App() {
         <Timeline />
         <Project />
         <ProjectGetToWork />
+        <ProjectFoodieAI />
     </div>
   )
 }
