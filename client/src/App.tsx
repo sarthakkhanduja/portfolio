@@ -4,6 +4,7 @@ import Works from './components/Works';
 import Contact from './components/Contact';
 import Timeline from './components/Timeline';
 import Project from './components/ProjectDocuTalk';
+import ProjectGetToWork from './components/ProjectGetToWork';
 // import DevInternModal from './components/DevInternModal';
 // import SeniorAnalystModal from './components/SeniorAnalystModal';
 
@@ -26,6 +27,7 @@ function App() {
         <Home />
         <Timeline />
         <Project />
+        <ProjectGetToWork />
     </div>
   )
 }
