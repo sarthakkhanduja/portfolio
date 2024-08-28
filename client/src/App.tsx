@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Timeline from './components/Timeline';
+import Project from './components/ProjectDocuTalk';
 // import DevInternModal from './components/DevInternModal';
 // import SeniorAnalystModal from './components/SeniorAnalystModal';
 
@@ -24,6 +25,7 @@ function App() {
     <div className="relative h-screen w-full overflow-y-scroll">
         <Home />
         <Timeline />
+        <Project />
     </div>
   )
 }
