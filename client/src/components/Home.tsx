@@ -24,6 +24,7 @@ function Home() {
 
     return (
         <div className="w-full h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+            
             {/* Navbar */}
             <div className="h-28 w-full py-4 px-16 flex flex-row">
                 <div className="w-1/2 flex justify-start">
@@ -73,7 +74,7 @@ function Home() {
             </div>
 
             {/* Footer Marquee */}
-            <div className={`h-20 w-full bg-[#DFFF9C] flex justify-center items-center transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
+            <div className={`h-[108px] w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
                 <Marquee autoFill={true}>
                     <MarqueeItem label="Based in Windsor, ON" />
                     <MarqueeItem label="3+ years of experience" />
