@@ -76,7 +76,7 @@ function IFiveOCoop({ closeModal }: IFiveOCoopProps) {
                             NODE.JS
                         </div>
                         <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            MICROSOFT AZURE
+                            AMAZON WEB SERVICES
                         </div>
                         
                     </div>

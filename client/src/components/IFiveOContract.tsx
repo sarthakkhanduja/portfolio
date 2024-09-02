@@ -61,29 +61,18 @@ function IFiveOContract({ closeModal }: IFiveOContractProps) {
                             PYTHON
                         </div>
                         <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            JAVASCRIPT
+                            MACHINE LEARNING
                         </div>
                         <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            JAVA
+                            COMPUTER VISION
                         </div>
                         <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            C#
+                            PYTORCH
                         </div>
                         <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            REACT
-                        </div>
-                        <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            NODE.JS
-                        </div>
-                        <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            MICROSOFT AZURE
+                            AMAZON WEB SERVICES
                         </div>
                         
-                    </div>
-                    <div className="h-16 flex flex-row justify-start items-center mx-8">
-                        <div className="p-2 font-display rounded-3xl border-[1px] border-black mr-4">
-                            AZURE SQL DATABASE
-                        </div>
                     </div>
 
                     {/* Content starts here */}

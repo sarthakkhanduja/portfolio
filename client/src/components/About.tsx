@@ -123,7 +123,7 @@ function About({ onClose }: AboutProps) {
                 <div className="mx-8">
                     <p className="py-2 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group"
                     onClick={() => {
-                        window.open("https://drive.google.com/file/d/1GCXRkqO9-9pRNCO58R7M3HGZQasqlCu0/view?usp=sharing");
+                        window.open("https://drive.google.com/file/d/15RwiWM8LRF64dBgOckrjXuw7Q9h7X_Bq/view?usp=sharing");
                     }}>
                         Resume
                         <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
