@@ -6,7 +6,7 @@ function ProjectFoodieAI() {
     return(
         <div>
             <div className="h-screen w-full bg-[#aa32c2]">
-                <div className={`h-24 w-full px-16 py-8 font-display font-custom text-2xl text-gray-200`}>
+                <div className={`h-24 w-full px-16 pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>3 / 3</p>
                 </div>
 
@@ -14,7 +14,7 @@ function ProjectFoodieAI() {
                 <div className="px-16 py-8 h-3/5 w-full flex flex-row">
 
                     {/* Left Hero Section */}
-                    <div className="font-display flex flex-col justify-around w-3/5">
+                    <div className="font-display flex flex-col justify-around w-3/5 pb-32">
                         {/* Title */}
                         <div className="flex flex-col text-white font-custom">
                             <p className="text-7xl">FoodieAI</p>
@@ -34,19 +34,19 @@ function ProjectFoodieAI() {
                         <div className="flex flex-row font-display">
                             {/* Project */}
                             <div className="flex flex-col justify-between pr-16">
-                                <p className="text-2xl font-medium text-gray-400">Project</p>
+                                <p className="text-2xl font-semibold text-gray-800">Project</p>
                                 <p className="mt-4 text-2xl font-custom text-white">FoodieAI</p>
                             </div>
 
                             {/* Role */}
                             <div className="flex flex-col justify-between px-16">
-                                <p className="text-2xl font-medium text-gray-400">Role</p>
+                                <p className="text-2xl font-semibold text-gray-800">Role</p>
                                 <p className="mt-4 text-2xl font-custom text-white">Developer</p>
                             </div>
 
                             {/* Date */}
                             <div className="flex flex-col justify-between px-16">
-                                <p className="text-2xl font-medium text-gray-400">Date</p>
+                                <p className="text-2xl font-semibold text-gray-800">Date</p>
                                 <p className="mt-4 text-2xl font-custom text-white">June 2024</p>
                             </div>
                         </div>

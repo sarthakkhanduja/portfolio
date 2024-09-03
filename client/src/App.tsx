@@ -9,6 +9,7 @@ import { useRef } from "react";
 function App() {
 
   // references for each section
+  const homeRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
   const getToWorkRef = useRef<HTMLDivElement>(null);
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="snap-y snap-mandatory h-screen w-full overflow-y-scroll">
         {/* Homepage */}
-        <div className="snap-start">
+        <div ref={homeRef} className="snap-start">
           <Home  
           onScrollToExperience={() => scrollToSection(timelineRef)}
           onScrollToWorks={() => scrollToSection(worksRef)}
@@ -55,7 +56,7 @@ function App() {
 
         {/* Contact */}
         <div ref={contactRef} className="snap-start">
-          <Contact />
+          <Contact onScrollToHome={() => scrollToSection(homeRef)} />
         </div>
     </div>
   );

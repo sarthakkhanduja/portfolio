@@ -1,14 +1,18 @@
 import upArrow from "../assets/upArrow.svg";
 
-function Contact() {
+interface ContactProps {
+    onScrollToHome: () => void;
+}
+
+function Contact({ onScrollToHome }: ContactProps) {
     return(
         <div className="h-screen w-full bg-black">
-            <div className={`h-48 text-white w-full px-16 font-display font-semibold text-[8rem] -pt-32`}>
+            <div className={`h-48 text-white w-full px-16 font-display font-semibold text-[8rem] pt-16`}>
                 <p>Nice to meet you,</p>
                 <p className="-mt-16">Let's connect.</p>
             </div>
 
-            <div className="w-full px-16 mt-48">
+            <div className="w-full px-16 mt-56">
                 <button className="px-8 py-4 w-64 rounded-[3rem] border-[1px] border-white text-3xl text-white font-display font-custom hover:bg-white hover:text-black ease-in-out duration-100"
                         onClick={() => {
                             window.open("https://calendly.com/sarthakkhanduja")
@@ -63,8 +67,15 @@ function Contact() {
                 <div>
                     Made by<span className="mx-2">Sarthak Khanduja</span>
                 </div>
-                <div className="rounded-full size-24 border-[1px] border-white p-6 hover:bg-[#5d5af7] hover:cursor-pointer">
-                    <img src={upArrow}></img>
+                <div className="rounded-full p-4 size-24 bg-white hover:bg-[#DFFF9C] hover:cursor-pointer group"
+                    onClick={onScrollToHome}>
+                    <div className="overflow-hidden">
+                        <img
+                            src={upArrow}
+                            className="transition-transform duration-300 transform group-hover:-translate-y-2"
+                            alt="Up Arrow"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
