@@ -4,6 +4,8 @@ import SeniorAnalystModal from "./SeniorAnalystModal";
 import IFiveOContract from "./IFiveOContract";
 import IFiveOCoop from "./IFiveOCoop";
 import ITCoop from "./ITCoop";
+import wave from "../assets/wave.svg";
+
 
 function Timeline() {
     // State to track if each element is hovered, initialized with an array of false values.
@@ -32,7 +34,7 @@ function Timeline() {
     };
 
     return (
-        <div className="h-screen flex flex-col justify-center items-center">
+        <div className="h-screen flex flex-col justify-center items-center">            
             <div className={`h-48 w-full px-16 pb-16 pt-32 font-display font-custom text-8xl ${isDevInternModalVisible ? 'blur-xl' : ''} ${isSeniorAnalystModalVisible ? 'blur-xl' : ''} ${isIFiveOContract ? 'blur-xl' : ''} ${isIFiveOCoop ? 'blur-xl' : ''} ${isITCoop ? 'blur-xl' : ''}`}>
                 <p>Experience</p>
             </div>

@@ -48,7 +48,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             <div className={`fixed top-0 left-0 w-full flex flex-row justify-between items-center py-8 px-16 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
                 <div className={`flex justify-start items-center ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
                     <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture"/>
-                    {!isScrolled && <h5 className="font-display text-xl">sarthakkhanduja.</h5>}
+                    <h5 className="font-display text-xl">sarthakkhanduja.</h5>
                 </div>
                 <div className={`flex-row flex justify-end items-center mr-10 px-4 py-2 rounded-[2rem] transition-all duration-300 ${isScrolled ? 'bg-gray-200' : 'bg-white'}`}>
                     <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />

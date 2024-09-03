@@ -71,9 +71,11 @@ function ProjectFoodieAI() {
             </div>
 
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
-                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-gray-400 via-slate-200 to-gray-500 p-20">
-                    <img src={screenshot}></img>
+                <div
+                    className="w-[93%] rounded-xl -mt-[20rem] mx-8 p-20 bg-gradient-to-b from-[#aa32c2] to-white">
+                    <img src={screenshot} alt="Screenshot" />
                 </div>
+
                 <div className="mt-8 p-16 font-display font-custom">
                     <p className="text-3xl text-gray-500">
                         Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
@@ -81,6 +83,7 @@ function ProjectFoodieAI() {
                     </p>
                 </div>
             </div>
+            
         </div>
         
     )

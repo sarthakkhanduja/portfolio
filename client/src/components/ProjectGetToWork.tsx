@@ -2,6 +2,7 @@ import blinkingAnimation from "../assets/blinkingAnimation.json";
 import Lottie from "lottie-react";
 import screenshot from "../assets/gettowork.png";
 
+
 function ProjectGetToWork() {
     return(
         <div>
@@ -70,8 +71,9 @@ function ProjectGetToWork() {
             </div>
 
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
-                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-red-500 to-yellow-200 p-20">
-                    <img src={screenshot}></img>
+                <div
+                    className="w-[93%] rounded-xl -mt-[20rem] mx-8 p-20 bg-gradient-to-b from-[#3C0AA5] to-white">
+                    <img src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">
                     <p className="text-3xl text-gray-500">
