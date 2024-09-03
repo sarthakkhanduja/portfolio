@@ -5,7 +5,7 @@ import screenshot from "../assets/foodieai.png";
 function ProjectFoodieAI() {
     return(
         <div>
-            <div className="h-screen w-full bg-[#FFD3C5]">
+            <div className="h-screen w-full bg-[#aa32c2]">
                 <div className={`h-24 w-full px-16 py-8 font-display font-custom text-2xl text-gray-200`}>
                     <p>3 / 3</p>
                 </div>
@@ -16,9 +16,9 @@ function ProjectFoodieAI() {
                     {/* Left Hero Section */}
                     <div className="font-display flex flex-col justify-around w-3/5">
                         {/* Title */}
-                        <div className="flex flex-col text-black font-custom">
+                        <div className="flex flex-col text-white font-custom">
                             <p className="text-7xl">FoodieAI</p>
-                            <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">MAKE RECIPES WITH LEFTOVER INGREDIENTS, POWERED BY AI.</p>
+                            <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-teal-400 to-yellow-200 text-transparent bg-clip-text">MAKE RECIPES WITH LEFTOVER INGREDIENTS, POWERED BY AI.</p>
                         </div>
 
                         <div className="w-[12%] flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
@@ -71,7 +71,7 @@ function ProjectFoodieAI() {
             </div>
 
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
-                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-blue-marguerite-500 to-jade-400 p-20">
+                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-teal-400 to-yellow-200 p-20">
                     <img src={screenshot}></img>
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">

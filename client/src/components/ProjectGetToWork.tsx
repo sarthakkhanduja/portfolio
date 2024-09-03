@@ -18,7 +18,7 @@ function ProjectGetToWork() {
                         {/* Title */}
                         <div className="flex flex-col text-white font-custom">
                             <p className="text-7xl">GetToWork</p>
-                            <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">ALL YOUR TASKS, UNDER ONE ROOF.</p>
+                            <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-red-500 to-yellow-200 text-transparent bg-clip-text">ALL YOUR TASKS, UNDER ONE ROOF.</p>
                         </div>
 
                         <div className="w-[12%] flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"

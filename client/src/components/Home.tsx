@@ -8,14 +8,17 @@ import MarqueeItem from "./MarqueeItem";
 import NavbarListItem from "./NavBarListItem";
 import { useState } from "react"; 
 import About from "./About";
-import Contact from "./Contact";
-import { useNavigate } from "react-router-dom";
 
-function Home() {
+interface HomeProps {
+    onScrollToExperience: () => void;
+    onScrollToWorks: () => void;
+    onScrollToContact: () => void;
+  }
+
+function Home({ onScrollToExperience, onScrollToWorks, onScrollToContact }: HomeProps) {
     // const navigate = useNavigate();
 
     const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
-
 
     const handleClose = () => {
         setActiveComponent(null);  // Close the active component
@@ -37,8 +40,9 @@ function Home() {
                 </div>
                 <div className="w-1/2 flex-row flex justify-end items-center mr-10">
                     <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
-                    <NavbarListItem label="Works" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
-                    <NavbarListItem label="Contact" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
+                    <NavbarListItem label="Experience" onClick={onScrollToExperience} />
+                    <NavbarListItem label="Works" onClick={onScrollToWorks} />
+                    <NavbarListItem label="Contact" onClick={onScrollToContact} />
                 </div>
             </div>
 

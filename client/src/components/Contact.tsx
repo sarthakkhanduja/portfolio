@@ -9,7 +9,10 @@ function Contact() {
             </div>
 
             <div className="w-full px-16 mt-48">
-                <button className="px-8 py-4 w-64 rounded-[3rem] border-[1px] border-white text-3xl text-white font-display font-custom hover:bg-white hover:text-black ease-in-out duration-100">
+                <button className="px-8 py-4 w-64 rounded-[3rem] border-[1px] border-white text-3xl text-white font-display font-custom hover:bg-white hover:text-black ease-in-out duration-100"
+                        onClick={() => {
+                            window.open("https://calendly.com/sarthakkhanduja")
+                        }}>
                     Book a call
                 </button>
             </div>
