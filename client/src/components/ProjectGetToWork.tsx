@@ -1,6 +1,6 @@
 import blinkingAnimation from "../assets/blinkingAnimation.json";
 import Lottie from "lottie-react";
-import screenshot from "../assets/docutalk-2.png";
+import screenshot from "../assets/gettowork.png";
 
 function ProjectGetToWork() {
     return(
