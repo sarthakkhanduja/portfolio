@@ -12,10 +12,12 @@ import About from "./About";
 interface HomeProps {
     onScrollToExperience: () => void;
     onScrollToWorks: () => void;
+    onScrollToGetToWork: () => void;
+    onScrollToFoodieAI: () => void;
     onScrollToContact: () => void;
   }
 
-function Home({ onScrollToExperience, onScrollToWorks, onScrollToContact }: HomeProps) {
+function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onScrollToFoodieAI, onScrollToContact }: HomeProps) {
     // const navigate = useNavigate();
 
     const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
@@ -71,9 +73,9 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToContact }: Home
                             <p>SELECTED PROJECTS</p>
                         </div>
                         <div className="mt-6 text-3xl font-display">
-                            <ProjectItem name={"DocuTalk"} />
-                            <ProjectItem name={"GetToWork"} />
-                            <ProjectItem name={"FoodieAI"} />
+                            <ProjectItem name={"DocuTalk"} onClick={onScrollToWorks}/>
+                            <ProjectItem name={"GetToWork"} onClick={onScrollToGetToWork} />
+                            <ProjectItem name={"FoodieAI"} onClick={onScrollToFoodieAI} />
                         </div>
                     </div>
                 </div>

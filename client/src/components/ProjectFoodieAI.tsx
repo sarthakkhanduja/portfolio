@@ -18,7 +18,7 @@ function ProjectFoodieAI() {
                         {/* Title */}
                         <div className="flex flex-col text-white font-custom">
                             <p className="text-7xl">FoodieAI</p>
-                            <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-teal-400 to-yellow-200 text-transparent bg-clip-text">MAKE RECIPES WITH LEFTOVER INGREDIENTS, POWERED BY AI.</p>
+                            <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">MAKE RECIPES WITH LEFTOVER INGREDIENTS, POWERED BY AI.</p>
                         </div>
 
                         <div className="w-[12%] flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
@@ -35,34 +35,34 @@ function ProjectFoodieAI() {
                             {/* Project */}
                             <div className="flex flex-col justify-between pr-16">
                                 <p className="text-2xl font-medium text-gray-400">Project</p>
-                                <p className="mt-4 text-2xl font-custom text-black">FoodieAI</p>
+                                <p className="mt-4 text-2xl font-custom text-white">FoodieAI</p>
                             </div>
 
                             {/* Role */}
                             <div className="flex flex-col justify-between px-16">
                                 <p className="text-2xl font-medium text-gray-400">Role</p>
-                                <p className="mt-4 text-2xl font-custom text-black">Developer</p>
+                                <p className="mt-4 text-2xl font-custom text-white">Developer</p>
                             </div>
 
                             {/* Date */}
                             <div className="flex flex-col justify-between px-16">
                                 <p className="text-2xl font-medium text-gray-400">Date</p>
-                                <p className="mt-4 text-2xl font-custom text-black">June 2024</p>
+                                <p className="mt-4 text-2xl font-custom text-white">June 2024</p>
                             </div>
                         </div>
                     </div>
                     {/* Tags */}
                     <div className="flex flex-col py-16 w-2/5 font-display justify-start font-bold items-end">
-                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-black border-gray-500 hover:cursor-text ease-in-out duration-200">
+                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
                             RAG - RETRIEVAL AUGMENTED GENERATION
                         </div>
-                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-black border-gray-500 hover:cursor-text ease-in-out duration-200">
+                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
                             GENERATIVE AI
                         </div>
-                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-black border-gray-500 hover:cursor-text ease-in-out duration-200">
+                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
                             PYTHON
                         </div>
-                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-black border-gray-500 hover:cursor-text ease-in-out duration-200">
+                        <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
                             PROMPT ENGINEERING
                         </div>
                     </div>
@@ -71,7 +71,7 @@ function ProjectFoodieAI() {
             </div>
 
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
-                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-teal-400 to-yellow-200 p-20">
+                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-gray-400 via-slate-200 to-gray-500 p-20">
                     <img src={screenshot}></img>
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">

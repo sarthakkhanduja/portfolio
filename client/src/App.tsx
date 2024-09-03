@@ -11,6 +11,8 @@ function App() {
   // references for each section
   const timelineRef = useRef<HTMLDivElement>(null);
   const worksRef = useRef<HTMLDivElement>(null);
+  const getToWorkRef = useRef<HTMLDivElement>(null);
+  const foodieAIRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
   // Function to scroll to a specific section
@@ -25,6 +27,8 @@ function App() {
           <Home  
           onScrollToExperience={() => scrollToSection(timelineRef)}
           onScrollToWorks={() => scrollToSection(worksRef)}
+          onScrollToGetToWork={() => scrollToSection(getToWorkRef)}
+          onScrollToFoodieAI={() => scrollToSection(foodieAIRef)}
           onScrollToContact={() => scrollToSection(contactRef)}
           />
         </div>
@@ -40,12 +44,12 @@ function App() {
         </div>
 
         {/* GetToWork */}
-        <div className="snap-start">
+        <div ref={getToWorkRef} className="snap-start">
           <ProjectGetToWork />
         </div>
 
         {/* Foodie AI */}
-        <div className="snap-start">
+        <div ref={foodieAIRef} className="snap-start">
           <ProjectFoodieAI />
         </div>
 
