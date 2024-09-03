@@ -1,7 +1,6 @@
 import blinkingAnimation from "../assets/blinkingAnimation.json";
 import Lottie from "lottie-react";
 import screenshot from "../assets/docutalk-2.png";
-import ufo from "../assets/ufo.jpg";
 
 function ProjectDocuTalk() {
     return(
@@ -71,9 +70,7 @@ function ProjectDocuTalk() {
             </div>
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
                 <div
-                    className="w-[93%] rounded-xl -mt-[20rem] mx-8 p-20 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${ufo})` }}
-                    >
+                    className="w-[93%] rounded-xl -mt-[20rem] mx-8 p-20 bg-gradient-to-b from-black via-black to-white">
                     <img src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">

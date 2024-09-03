@@ -72,7 +72,7 @@ function ProjectFoodieAI() {
 
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
                 <div
-                    className="w-[93%] rounded-xl -mt-[20rem] mx-8 p-20 bg-gradient-to-b from-[#aa32c2] to-white">
+                    className="w-[93%] rounded-xl -mt-[20rem] mx-8 p-20 bg-gradient-to-b from-[#aa32c2] via-[#aa32c2] to-white">
                     <img src={screenshot} alt="Screenshot" />
                 </div>
 

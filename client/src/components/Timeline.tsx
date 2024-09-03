@@ -4,7 +4,6 @@ import SeniorAnalystModal from "./SeniorAnalystModal";
 import IFiveOContract from "./IFiveOContract";
 import IFiveOCoop from "./IFiveOCoop";
 import ITCoop from "./ITCoop";
-import wave from "../assets/wave.svg";
 
 
 function Timeline() {
