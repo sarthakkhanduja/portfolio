@@ -9,7 +9,6 @@ import NavbarListItem from "./NavBarListItem";
 import { useState } from "react"; 
 import About from "./About";
 import Contact from "./Contact";
-import Works from "./Works";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -38,8 +37,8 @@ function Home() {
                 </div>
                 <div className="w-1/2 flex-row flex justify-end items-center mr-10">
                     <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
-                    <NavbarListItem label="Works" onClick={() => setActiveComponent(<Works />)} />
-                    <NavbarListItem label="Contact" onClick={() => setActiveComponent(<Contact />)} />
+                    <NavbarListItem label="Works" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
+                    <NavbarListItem label="Contact" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
                 </div>
             </div>
 

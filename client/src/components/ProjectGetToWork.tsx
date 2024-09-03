@@ -70,7 +70,7 @@ function ProjectGetToWork() {
             </div>
 
             <div className="h-screen bg-white w-full flex justify-center items-center flex-col">
-                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-red-500 to-yellow-200 p-16">
+                <div className="w-[93%] rounded-xl -mt-[20rem] mx-8 bg-gradient-to-r from-red-500 to-yellow-200 p-20">
                     <img src={screenshot}></img>
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">
