@@ -6,7 +6,7 @@ type ProjectItemProps = {
   function ProjectItem({ name, onClick }: ProjectItemProps) {
     return (
       <p 
-        className="py-6 md:py-8 border-b-[1px] border-gray-400 cursor-pointer  overflow-hidden group" 
+        className="py-3  md:py-6  border-b-[1px] border-gray-400 cursor-pointer  overflow-hidden group" 
         onClick={onClick}
       >
         {name}
