@@ -37,7 +37,7 @@ export default function Timeline() {
 
       <div className={`w-full py-8 px-4 font-display ${isAnyModalVisible ? 'blur-xl' : ''}`}>
         {/* Timeline */}
-        <ol className="relative flex flex-col md:flex-row md:justify-between after:content-[''] after:absolute after:w-1 md:after:w-full after:h-full md:after:h-1 after:bg-gray-200 after:left-1.5 md:after:left-0 after:top-0 md:after:top-[2%]">
+        <ol className="relative flex flex-col md:flex-row md:justify-between after:content-[''] after:absolute after:w-1 md:after:w-full after:h-full md:after:h-1 after:bg-gray-200 after:left-1.5 md:after:left-0 after:top-4 md:after:top-[3.5%]">
           {[
             { date: "July 2020", company: "AB InBev", type: "INTERNSHIP", modalSetter: setIsDevInternModalVisible },
             { date: "August 2021", company: "AB InBev", type: "FULL-TIME", modalSetter: setIsSeniorAnalystModalVisible },
@@ -53,7 +53,7 @@ export default function Timeline() {
               className={`relative flex flex-col md:items-center mb-12 md:mb-0 pl-12 md:pl-0 md:w-1/5 transition-transform duration-300 hover:scale-105 hover:cursor-pointer ${hovered[index] ? 'scale-105' : ''}`}
             >
               {/* Bullet */}
-              <div className="absolute left-0 md:static size-4 z-40 bg-gray-500 rounded-full border-2 border-white md:mb-4"></div>
+              <div className="absolute left-0 top-2.5 md:static size-4 z-40 bg-gray-500 rounded-full border-2 border-white md:mb-4"></div>
 
               {/* Date */}
               <h3 className={`mb-2 md:mb-4 p-2 rounded-3xl text-sm md:text-xl font-display font-custom text-gray-900 ${hovered[index] ? 'bg-[#DFFF9C]' : ''}`}>{item.date}</h3>
@@ -61,7 +61,7 @@ export default function Timeline() {
               {/* Title */}
               <div className="flex flex-col items-start md:items-center justify-center">
                 <h3 className={`p-2 text-2xl md:text-3xl font-display font-custom leading-none text-gray-700 ${hovered[index] ? 'bg-[#DFFF9C]' : ''} rounded-3xl`}>{item.company}</h3>
-                <h3 className="mt-1 text-sm md:text-lg font-display font-custom tracking-wide text-gray-500">{item.type}</h3>
+                <h3 className="mt-1 pl-2 text-sm md:text-lg font-display font-custom tracking-wide text-gray-500">{item.type}</h3>
               </div>
             </li>
           ))}
