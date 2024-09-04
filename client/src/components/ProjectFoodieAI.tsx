@@ -3,15 +3,17 @@ import Lottie from "lottie-react";
 import screenshot from "../assets/foodieai.png";
 
 function ProjectFoodieAI() {
-    return(
+    return (
         <div className="md:flex flex-col">
-            <div className="min-h-screen w-full bg-[#aa32c2] px-10">
+            <div className="min-h-screen w-full bg-[#aa32c2] ">
+                <div className="px-10">
+
                 <div className={`h-24 w-full  pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>3 / 3</p>
                 </div>
 
                 {/* Hero Section */}
-                <div className=" py-8 h-3/5 w-full flex flex-row">
+                <div className=" py-8 h-3/5 w-full flex flex-row justify-between">
 
                     {/* Left Hero Section */}
                     <div className="font-display flex flex-col gap-6 justify-around  pb-32">
@@ -23,7 +25,8 @@ function ProjectFoodieAI() {
 
                         <div className="w-20 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
                             onClick={() => {
-                                window.open("https://foodieai.streamlit.app/")}
+                                window.open("https://foodieai.streamlit.app/")
+                            }
                             }>
                             <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8" />
                             <p className="text-xl font-grotesk font-custom ">LIVE</p>
@@ -33,7 +36,7 @@ function ProjectFoodieAI() {
                         {/* Details about the Project */}
                         <div className="flex flex-col gap-8  lg:gap-8 sm:flex-row font-display items-start">
                             {/* Project */}
-                            <div className="flex flex-col justify-between pr-16">
+                            <div className="flex flex-col justify-between">
                                 <p className="text-2xl font-semibold text-gray-800">Project</p>
                                 <p className="mt-4 text-2xl font-custom text-white">FoodieAI</p>
                             </div>
@@ -52,7 +55,7 @@ function ProjectFoodieAI() {
                         </div>
                     </div>
                     {/* Tags */}
-                    <div className="hidden md:flex flex-col py-16 w-2/5 font-display justify-start font-bold items-end">
+                    <div className="hidden md:flex flex-col  w-2/5 font-display justify-start font-bold items-end">
                         <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
                             RAG - RETRIEVAL AUGMENTED GENERATION
                         </div>
@@ -68,24 +71,26 @@ function ProjectFoodieAI() {
                     </div>
 
                 </div>
-            </div>
-
-            <div className=" bg-white w-full flex justify-center items-center flex-col">
-                <div
-                    className="w-full rounded-xl -mt-[9rem] sm:-mt-[6rem] mx-8 p-20 bg-gradient-to-b from-[#aa32c2] via-[#aa32c2] to-white">
-                    <img src={screenshot} alt="Screenshot" />
                 </div>
 
-                <div className="mt-8 p-16 font-display font-custom">
-                    <p className="text-3xl text-gray-500">
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    </p>
+                <div className=" bg-white w-full flex justify-center items-center flex-col">
+                    <div
+                        className="w-full rounded-xl -mt-[10rem] md:-mt-[6rem]  mx-8 p-20 bg-gradient-to-b from-[#aa32c2] via-[#aa32c2] to-white">
+                        <img src={screenshot} alt="Screenshot" />
+                    </div>
+
+                    <div className="mt-8 p-16 font-display font-custom">
+                        <p className="text-3xl text-gray-500">
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        </p>
+                    </div>
                 </div>
             </div>
-            
+
+
         </div>
-        
+
     )
 }
 

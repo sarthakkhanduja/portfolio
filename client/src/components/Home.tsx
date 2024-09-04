@@ -45,21 +45,8 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
         <div className="w-full min-h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
             {/* Navbar */}
-            {/* <div className={`fixed hidden  top-0 left-0 w-full md:flex flex-row justify-between items-center py-8 px-16 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
-                <div className={`flex justify-start items-center ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
-                    <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture"/>
-                    <h5 className="hidden md:block font-display text-xl">sarthakkhanduja.</h5>
-                </div>
-                <div className={`flex-row flex justify-end items-center mr-10 px-4 py-2 rounded-[2rem] transition-all duration-300 ${isScrolled ? 'bg-gray-200' : 'bg-white'}`}>
-                    <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
-                    <NavbarListItem label="Experience" onClick={onScrollToExperience} />
-                    <NavbarListItem label="Works" onClick={onScrollToWorks} />
-                    <NavbarListItem label="Contact" onClick={onScrollToContact} />
-                </div>
-            </div> */}
-
             <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 justify-center transition-all duration-300 `}>
-                <div className="flex flex-grow justify-between rounded-full bg-white px-4 border-solid border-2 border-muted md:bg-transparent md:border-none">
+                <div className="flex flex-grow justify-between rounded-full bg-white w-full  border-solid border-2 border-muted md:bg-transparent md:border-none">
 
                     <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
                         <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture" />
@@ -90,7 +77,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
                         <p className="text-xl font-grotesk font-custom p-2 ml-1">available for opportunities</p>
                     </div>
-                    <div className="mt-16 text-4xl">
+                    <div className="mt-16 text-xl sm:text-4xl">
                         <p className="font-display">Transforming ideas into reality,</p>
                         <p className="font-display mt-4">one line of code at a time.</p>
                     </div>

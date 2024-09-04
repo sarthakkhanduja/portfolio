@@ -6,7 +6,9 @@ import screenshot from "../assets/gettowork.png";
 function ProjectGetToWork() {
     return(
         <div className="md:flex flex-col">
-            <div className="min-h-screen w-full bg-[#3C0AA5] px-10">
+            <div className="min-h-screen w-full bg-[#3C0AA5] ">
+            <div className="px-10">
+
                 <div className={`h-24 w-full  pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>2 / 3</p>
                 </div>
@@ -18,7 +20,7 @@ function ProjectGetToWork() {
                     <div className="font-display flex flex-col gap-6 justify-around  pb-32">
                         {/* Title */}
                         <div className="flex flex-col text-white font-custom">
-                            <p className="text-7xl">GetToWork</p>
+                            <p className="text-6xl sm:text-7xl">GetToWork</p>
                             <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-red-500 to-yellow-200 text-transparent bg-clip-text">ALL YOUR TASKS, UNDER ONE ROOF.</p>
                         </div>
 
@@ -53,7 +55,7 @@ function ProjectGetToWork() {
                         </div>
                     </div>
                     {/* Tags */}
-                    <div className="hidden md:flex flex-col py-16 w-2/5 font-display justify-start font-bold items-end">
+                    <div className="hidden md:flex flex-col w-2/5 font-display justify-start font-bold items-end">
                         <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-500 hover:cursor-text ease-in-out duration-200">
                             JAVASCRIPT
                         </div>
@@ -72,7 +74,7 @@ function ProjectGetToWork() {
 
             <div className=" bg-white w-full flex justify-center items-center flex-col">
                 <div
-                    className="w-full rounded-xl  -mt-[9rem] sm:mt-[-6rem]  p-20 bg-gradient-to-b from-[#3C0AA5] via-[#3C0AA5] to-white">
+                    className="w-full rounded-xl  -mt-[10rem] md:-mt-[6rem]   p-20 bg-gradient-to-b from-[#3C0AA5] via-[#3C0AA5] to-white">
                     <img src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">
@@ -82,6 +84,8 @@ function ProjectGetToWork() {
                     </p>
                 </div>
             </div>
+            </div>
+
         </div>
         
     )
