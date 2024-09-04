@@ -61,9 +61,9 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             <div className={` fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 justify-center transition-all duration-300 `}>
                 <div className="flex flex-grow justify-between rounded-full bg-white px-4 border-solid border-2 border-muted md:bg-transparent md:border-none">
 
-                    <div className={`flex justify-start items-center ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
+                    <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
                         <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture" />
-                        <h5 className="hidden md:block font-display text-xl">sarthakkhanduja.</h5>
+                        <h5 className="hidden md:block font-display text-xl">sarthakkhanduja. </h5>
                     </div>
 
                     <div className={`flex-row flex justify-end items-center  py-2 rounded-[2rem] transition-all duration-300 backdrop-blur-md bg-white/50`}>
