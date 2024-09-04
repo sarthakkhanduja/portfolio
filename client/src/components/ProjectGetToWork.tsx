@@ -24,12 +24,12 @@ function ProjectGetToWork() {
                             <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-red-500 to-yellow-200 text-transparent bg-clip-text">ALL YOUR TASKS, UNDER ONE ROOF.</p>
                         </div>
 
-                        <div className="w-20 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
+                        <div className="max-w-min px-3 pr-6 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
                             onClick={() => {
                                 window.open("https://gettowork.vercel.app/")}
                             }>
-                            <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
-                            <p className="text-xl font-grotesk font-custom px-3">LIVE</p>
+                            <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8" />
+                            <p className="text-xl font-grotesk font-custom ">LIVE</p>
                         </div>
 
 

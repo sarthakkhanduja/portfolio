@@ -23,12 +23,12 @@ function ProjectDocuTalk() {
                             <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">TALK TO YOUR FILES, POWERED BY OPENAI.</p>
                         </div>
 
-                        <div className="w-20 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
+                        <div className="max-w-min px-3 pr-6 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
                             onClick={() => {
                                 window.open("https://docu-talk.streamlit.app/")
                             }
                             }>
-                            <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 " />
+                            <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8  " />
                             <p className="text-xl font-grotesk font-custom ">LIVE</p>
                         </div>
 

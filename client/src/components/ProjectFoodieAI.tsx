@@ -23,7 +23,7 @@ function ProjectFoodieAI() {
                             <p className="mt-2 text-2xl tracking-wide bg-gradient-to-r from-gray-100 to-gray-300 text-transparent bg-clip-text">MAKE RECIPES WITH LEFTOVER INGREDIENTS, POWERED BY AI.</p>
                         </div>
 
-                        <div className="w-20 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
+                        <div className="max-w-min px-3 pr-6 flex flex-row justify-start font-custom items-center border-2 border-[#4FC153] hover:cursor-pointer rounded-3xl transition-colors duration-800 ease-in-out animate-background"
                             onClick={() => {
                                 window.open("https://foodieai.streamlit.app/")
                             }
