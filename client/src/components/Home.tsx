@@ -45,7 +45,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
         <div className="w-full min-h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
             {/* Navbar */}
-            <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 md:px-12 justify-center transition-all duration-300 `}>
+            <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 md:px-10 justify-center transition-all duration-300 `}>
                 <div className="flex flex-grow justify-between rounded-full bg-white w-full  border-solid border-2 border-muted md:bg-transparent md:border-none ">
 
                     <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
@@ -63,7 +63,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             </div>
 
             {/* Main Content */}
-            <div className={`flex-grow flex flex-col md:flex-row md:justify-around w-full md:items-center px-6 md:px-10 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
+            <div className={`flex-grow flex flex-col md:flex-row md:justify-around w-full md:items-center px-4 md:px-6 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
 
                 <div className="flex flex-col  pb-2  mt-24 md:w-3/5 ">
                     <div className="flex flex-col pb-8 text-7xl lg:text-9xl">
@@ -75,7 +75,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                             window.open("https://drive.google.com/file/d/15RwiWM8LRF64dBgOckrjXuw7Q9h7X_Bq/view?usp=sharing");
                         }}>
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
-                        <p className="text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
+                        <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
                     </div>
                     <div className="mt-8 font-display text-xl sm:text-5xl ">
                         <p className="font-display">Transforming ideas into reality,</p>
