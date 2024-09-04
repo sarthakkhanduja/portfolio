@@ -6,8 +6,8 @@ interface ContactProps {
 
 function Contact({ onScrollToHome }: ContactProps) {
     return(
-        <div className="md:h-screen w-full bg-black px-10">
-            <div className={`h-48 text-white w-full  font-display font-semibold text-4xl pt-28`}>
+        <div className="lg:h-screen w-full bg-black px-10">
+            <div className={`h-48 text-white w-full  font-display font-semibold text-4xl sm:text-5xl pt-28`}>
                 <p>Nice to meet you,</p>
                 <p className="">Let's connect.</p>
             </div>
