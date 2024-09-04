@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div className="snap-y snap-mandatory h-screen w-full overflow-y-scroll">
+    <div className="snap-y snap-mandatory flex flex-col h-screen w-full ">
         {/* Homepage */}
         <div ref={homeRef} className="snap-start">
           <Home  
