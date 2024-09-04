@@ -11,10 +11,10 @@ function ProjectDocuTalk() {
                 </div>
 
                 {/* Hero Section */}
-                <div className=" py-8 h-3/5 w-full flex flex-row">
+                <div className=" py-8 h-3/5 w-full flex flex-row justify-between">
 
                     {/* Left Hero Section */}
-                    <div className="font-display flex flex-col gap-6 justify-around w-3/5 pb-32">
+                    <div className="font-display flex flex-col gap-6 justify-around  pb-32">
                         {/* Title */}
                         <div className="flex flex-col text-white font-custom">
                             <p className="text-7xl">DocuTalk</p>
@@ -52,7 +52,7 @@ function ProjectDocuTalk() {
                         </div>
                     </div>
                     {/* Tags */}
-                    <div className="hidden lg:flex flex-col py-16 w-2/5 font-display justify-start font-bold items-end">
+                    <div className="hidden md:flex flex-col py-16 w-2/5 font-display justify-start font-bold items-end">
                         <div className="text-xl w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-500 hover:cursor-text ease-in-out duration-200">
                             RAG - RETRIEVAL AUGMENTED GENERATION
                         </div>
@@ -70,7 +70,7 @@ function ProjectDocuTalk() {
             </div>
             <div className=" bg-white w-full flex justify-center items-center flex-col">
                 <div
-                    className="w-full rounded-xl mt-[-10rem] p-20 bg-gradient-to-b from-black via-black to-white">
+                    className="w-full rounded-xl mt-[-6rem] p-20 bg-gradient-to-b from-black via-black to-white">
                     <img src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">
