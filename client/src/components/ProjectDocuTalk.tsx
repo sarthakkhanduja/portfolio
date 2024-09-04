@@ -70,7 +70,7 @@ function ProjectDocuTalk() {
             </div>
             <div className=" bg-white w-full flex justify-center items-center flex-col">
                 <div
-                    className="w-full rounded-xl mt-[-6rem] p-20 bg-gradient-to-b from-black via-black to-white">
+                    className="w-full rounded-xl -mt-[9rem] sm:mt-[-6rem] p-20 bg-gradient-to-b from-black via-black to-white">
                     <img src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="mt-8 p-16 font-display font-custom">
