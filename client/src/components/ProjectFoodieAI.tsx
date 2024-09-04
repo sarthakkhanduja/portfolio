@@ -79,8 +79,8 @@ function ProjectFoodieAI() {
                         <img src={screenshot} alt="Screenshot" />
                     </div>
 
-                    <div className="mt-8 p-16 font-display font-custom">
-                        <p className="text-3xl text-gray-500">
+                    <div className="md:-mt-20 p-16  font-display font-custom">
+                        <p className="text-l md:text-3xl text-gray-500">
                             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                             Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                         </p>
