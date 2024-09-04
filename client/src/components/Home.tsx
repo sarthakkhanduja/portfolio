@@ -76,30 +76,32 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             </div>
 
             {/* Main Content */}
-            <div className={`flex-grow flex flex-col md:flex-row w-full transition-all duration-300 pt-28 ${activeComponent ? 'blur-md' : ''}`}>
-                <div className="flex flex-col pl-16 pb-16 w-3/5">
-                    <div className="flex flex-col pb-8 -mt-12">
-                        <p className="text-[10rem] font-display font-custom">I'm Sarthak</p>
-                        <p className="text-[10rem] font-display font-custom -mt-24">Khanduja.</p>
+            <div className={`flex-grow flex flex-col md:flex-row md:justify-around w-full md:items-center px-6 md:px-10 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
+
+                <div className="flex flex-col  pb-16  mt-32 md:w-3/5 ">
+                    <div className="flex flex-col pb-8 text-7xl">
+                        <p className="font-display font-custom">I'm Sarthak</p>
+                        <p className="font-display font-custom ">Khanduja.</p>
                     </div>
-                    <div className="w-[30%] flex flex-row justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-800 ease-in-out hover:cursor-pointer animate-background"
+                    <div className="max-w-min flex flex-row justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-800 ease-in-out hover:cursor-pointer animate-background"
                         onClick={() => {
                             window.open("https://drive.google.com/file/d/15RwiWM8LRF64dBgOckrjXuw7Q9h7X_Bq/view?usp=sharing");
                         }}>
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
-                        <p className="text-xl font-grotesk font-custom ml-1">available for opportunities</p>
+                        <p className="text-xl font-grotesk font-custom p-2 ml-1">available for opportunities</p>
                     </div>
-                    <div className="mt-16">
-                        <p className="text-7xl font-display">Transforming ideas into reality,</p>
-                        <p className="text-7xl font-display mt-4">one line of code at a time.</p>
+                    <div className="mt-16 text-4xl">
+                        <p className="font-display">Transforming ideas into reality,</p>
+                        <p className="font-display mt-4">one line of code at a time.</p>
                     </div>
                 </div>
-                <div className="w-2/5 flex justify-start p-36">
+                
+                <div className="flex justify-start md:w-2/6">
                     <div className="w-full">
                         <div className="font-display text-2xl tracking-wider text-gray-500">
                             <p>SELECTED PROJECTS</p>
                         </div>
-                        <div className="mt-6 text-3xl font-display">
+                        <div className="mt-6 text-xl md:text-3xl font-display">
                             <ProjectItem name={"DocuTalk"} onClick={onScrollToWorks} />
                             <ProjectItem name={"GetToWork"} onClick={onScrollToGetToWork} />
                             <ProjectItem name={"FoodieAI"} onClick={onScrollToFoodieAI} />
