@@ -42,7 +42,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
     };
 
     return (
-        <div className="w-full h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="w-full min-h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
             {/* Navbar */}
             {/* <div className={`fixed hidden  top-0 left-0 w-full md:flex flex-row justify-between items-center py-8 px-16 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
@@ -58,7 +58,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                 </div>
             </div> */}
 
-            <div className={` fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 justify-center transition-all duration-300 `}>
+            <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 justify-center transition-all duration-300 `}>
                 <div className="flex flex-grow justify-between rounded-full bg-white px-4 border-solid border-2 border-muted md:bg-transparent md:border-none">
 
                     <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
@@ -111,7 +111,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             </div>
 
             {/* Footer Marquee */}
-            <div className={`h-[108px] w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
+            <div className={`max-h-[108px] z-1 w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
                 <Marquee autoFill={true}>
                     <MarqueeItem label="Based in Windsor, ON" />
                     <MarqueeItem label="3+ years of experience" />
