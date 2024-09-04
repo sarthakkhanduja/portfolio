@@ -6,7 +6,7 @@ import backgroundImage from "../assets/background.svg";
 import ProjectItem from "./ProjectItem";
 import MarqueeItem from "./MarqueeItem";
 import NavbarListItem from "./NavBarListItem";
-import { useState, useEffect } from "react"; 
+import { useState, useEffect } from "react";
 import About from "./About";
 
 interface HomeProps {
@@ -43,12 +43,12 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
 
     return (
         <div className="w-full h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
-            
+
             {/* Navbar */}
-            <div className={`fixed top-0 left-0 w-full flex flex-row justify-between items-center py-8 px-16 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
+            {/* <div className={`fixed hidden  top-0 left-0 w-full md:flex flex-row justify-between items-center py-8 px-16 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : ''}`}>
                 <div className={`flex justify-start items-center ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
                     <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture"/>
-                    <h5 className="font-display text-xl">sarthakkhanduja.</h5>
+                    <h5 className="hidden md:block font-display text-xl">sarthakkhanduja.</h5>
                 </div>
                 <div className={`flex-row flex justify-end items-center mr-10 px-4 py-2 rounded-[2rem] transition-all duration-300 ${isScrolled ? 'bg-gray-200' : 'bg-white'}`}>
                     <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
@@ -56,10 +56,27 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                     <NavbarListItem label="Works" onClick={onScrollToWorks} />
                     <NavbarListItem label="Contact" onClick={onScrollToContact} />
                 </div>
+            </div> */}
+
+            <div className={` fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-8 px-4 justify-center transition-all duration-300 `}>
+                <div className="flex flex-grow justify-between rounded-full bg-white px-4 border-solid border-2 border-muted md:bg-transparent md:border-none">
+
+                    <div className={`flex justify-start items-center ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
+                        <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture" />
+                        <h5 className="hidden md:block font-display text-xl">sarthakkhanduja.</h5>
+                    </div>
+
+                    <div className={`flex-row flex justify-end items-center  py-2 rounded-[2rem] transition-all duration-300 backdrop-blur-md bg-white/50`}>
+                        <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
+                        <NavbarListItem label="Experience" onClick={onScrollToExperience} />
+                        <NavbarListItem label="Works" onClick={onScrollToWorks} />
+                        <NavbarListItem label="Contact" onClick={onScrollToContact} />
+                    </div>
+                </div>
             </div>
 
             {/* Main Content */}
-            <div className={`flex-grow flex flex-row w-full transition-all duration-300 pt-28 ${activeComponent ? 'blur-md' : ''}`}>
+            <div className={`flex-grow flex flex-col md:flex-row w-full transition-all duration-300 pt-28 ${activeComponent ? 'blur-md' : ''}`}>
                 <div className="flex flex-col pl-16 pb-16 w-3/5">
                     <div className="flex flex-col pb-8 -mt-12">
                         <p className="text-[10rem] font-display font-custom">I'm Sarthak</p>
@@ -83,7 +100,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                             <p>SELECTED PROJECTS</p>
                         </div>
                         <div className="mt-6 text-3xl font-display">
-                            <ProjectItem name={"DocuTalk"} onClick={onScrollToWorks}/>
+                            <ProjectItem name={"DocuTalk"} onClick={onScrollToWorks} />
                             <ProjectItem name={"GetToWork"} onClick={onScrollToGetToWork} />
                             <ProjectItem name={"FoodieAI"} onClick={onScrollToFoodieAI} />
                         </div>
@@ -107,7 +124,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                 </div>
             )}
         </div>
-        
+
     );
 }
 
