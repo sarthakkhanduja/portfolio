@@ -6,20 +6,20 @@ interface ITCoopProps {
 
 function ITCoop({ closeModal }: ITCoopProps) {
     return (
-        <div className="flex items-start justify-center h-screen p-4">
-            <div className="w-full md:w-3/4 mt-20 border-black border-[1px] rounded-3xl shadow-2xl bg-white z-100 h-[90%] overflow-y-auto">
+        <div className="flex items-start justify-center h-screen p-4 mt-20 md:mt-0">
+            <div className="w-full md:w-3/4 m-auto border-black border-[1px] rounded-3xl shadow-2xl bg-white z-100 h-[90%] overflow-y-auto">
                 <div className="flex flex-col">
                     <div className="flex flex-row w-full">
                         {/* Title, Company */}
                         <div className="flex flex-col justify-start font-display p-8 w-3/5">
-                            <p className="text-2xl font-custom">IT Services Delivery, Co-op</p>
-                            <div className="w-fit self-start px-4 py-1 mt-1 font-display rounded-3xl border-[1px] border-black bg-[#ffc0bc] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">
+                            <p className="text-3xl lg:text-4xl font-custom">IT Services Delivery, Co-op</p>
+                            <div className="w-fit self-start px-4 py-1 mt-4 font-display rounded-3xl border-[1px] border-black bg-[#ffc0bc] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">
                                 Hiram Walker and Sons, Pernod Ricard
                             </div>
                         </div>
 
                         {/* Dates, Location */}
-                        <div className="flex flex-col justify-start ml-auto text-right w-2/5">
+                        <div className="flex flex-row-reverse justify-start ml-auto text-right w-2/5">
                             <div className="p-4">
                             <button
                                 type="button"
@@ -46,7 +46,7 @@ function ITCoop({ closeModal }: ITCoopProps) {
 
                             </div>
 
-                            <div className="flex flex-col justify-center font-display px-8 text-gray-500">
+                            <div className="flex flex-col justify-center font-display  text-gray-500">
                                 <p className="text-xs md:text-xl font-custom">September 2023 - December 2023</p>
                                 <div className="flex flex-row items-center justify-end text-right">
                                     <img className="mx-2 size-6" src={locationPin}></img>
@@ -56,29 +56,29 @@ function ITCoop({ closeModal }: ITCoopProps) {
                         </div>
                     </div>
 
-                    <div className="flex flex-row justify-start items-center mx-8 flex-wrap gap-3">
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                    <div className="flex flex-row justify-start items-center mx-8 flex-wrap gap-2">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             PYTHON
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             JAVASCRIPT
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             JAVA
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             C#
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             REACT
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             NODE.JS
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             MICROSOFT AZURE
                         </div>
-                        <div className="p-2 font-display  text-xs lg:text-lg rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display  text-xs px-4 rounded-3xl border-[1px] border-black">
                             AZURE SQL DATABASE
                         </div>
                     </div>

@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DevInternModal from "./DevInternModal";
 import SeniorAnalystModal from "./SeniorAnalystModal";
 import IFiveOContract from "./IFiveOContract";
 import IFiveOCoop from "./IFiveOCoop";
 import ITCoop from "./ITCoop";
 
-export default function Timeline() {
+export default function Timeline({ setHideNav }: { setHideNav: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [hovered, setHovered] = useState<boolean[]>([false, false, false, false, false]);
   const [isDevInternModalVisible, setIsDevInternModalVisible] = useState(false);
   const [isSeniorAnalystModalVisible, setIsSeniorAnalystModalVisible] = useState<boolean>(false);
@@ -28,6 +28,19 @@ export default function Timeline() {
   };
 
   const isAnyModalVisible = isDevInternModalVisible || isSeniorAnalystModalVisible || isIFiveOContract || isIFiveOCoop || isITCoop;
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (body) {
+      body.style.overflow = isAnyModalVisible ? 'hidden' : 'auto';
+    }
+
+    if (isAnyModalVisible) {
+      setHideNav(true);
+    } else {
+      setHideNav(false);
+    }
+  }, [isAnyModalVisible]);
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center md:p-8">            

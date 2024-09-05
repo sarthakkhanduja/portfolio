@@ -15,9 +15,10 @@ interface HomeProps {
     onScrollToGetToWork: () => void;
     onScrollToFoodieAI: () => void;
     onScrollToContact: () => void;
+    hideNav: boolean;
 }
 
-function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onScrollToFoodieAI, onScrollToContact }: HomeProps) {
+function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onScrollToFoodieAI, onScrollToContact,hideNav }: HomeProps) {
     const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -45,7 +46,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
         <div className="w-full min-h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
             {/* Navbar */}
-            <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 md:px-10 justify-center transition-all duration-300 `}>
+           <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 md:px-10 justify-center transition-all duration-300 ${hideNav ? 'md:hidden' : ''} `}>
                 <div className="flex flex-grow justify-between rounded-full bg-white w-full  border-solid border-2 border-muted md:bg-transparent md:border-none ">
 
                     <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
