@@ -19,7 +19,7 @@ function ITCoop({ closeModal }: ITCoopProps) {
                         </div>
 
                         {/* Dates, Location */}
-                        <div className="flex flex-row-reverse justify-start ml-auto text-right w-2/5">
+                        <div className="flex flex-col md:flex-row-reverse justify-start pl-6  text-right w-2/5">
                             <div className="p-4">
                             <button
                                 type="button"
@@ -46,7 +46,7 @@ function ITCoop({ closeModal }: ITCoopProps) {
 
                             </div>
 
-                            <div className="flex flex-col justify-center font-display  text-gray-500">
+                            <div className="flex flex-col justify-center font-display  mr-6 text-gray-500">
                                 <p className="text-xs md:text-xl font-custom">September 2023 - December 2023</p>
                                 <div className="flex flex-row items-center justify-end text-right">
                                     <img className="mx-2 size-6" src={locationPin}></img>

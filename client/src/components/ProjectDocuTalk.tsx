@@ -6,7 +6,7 @@ function ProjectDocuTalk() {
     return (
         <div className="md:flex flex-col">
             <div className="min-h-screen w-full bg-black">
-                <div className="px-5 md:px-10">
+                <div className="px-5 md:px-14">
 
                 <div className={`h-24 w-full  pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>1 / 3</p>

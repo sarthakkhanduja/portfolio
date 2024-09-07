@@ -6,7 +6,7 @@ function ProjectFoodieAI() {
     return (
         <div className="md:flex flex-col">
             <div className="min-h-screen w-full bg-[#aa32c2] ">
-                <div className="px-5 md:px-10">
+                <div className="px-5 md:px-14">
 
                 <div className={`h-24 w-full  pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>3 / 3</p>
