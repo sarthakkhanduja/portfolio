@@ -78,18 +78,18 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
                         <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
                     </div>
-                    <div className="mt-8 lg:mt-12 font-display text-xl sm:text-5xl ">
+                    <div className="mt-8 lg:mt-12 font-display text-2xl sm:text-4xl md:text-5xl">
                         <p className="font-display">Transforming ideas into reality,</p>
                         <p className="font-display ">one line of code at a time.</p>
                     </div>
                 </div>
                 
-                <div className="flex h-full md:w-2/6 mt-10 md:mt-0 mb-10 md:mb-0">
-                    <div className="w-full  ">
+                <div className="flex h-full md:w-2/6 mt-10 md:mt-6 mb-10 md:mb-0">
+                    <div className="w-full">
                         <div className="font-display text-sm md:text-xl tracking-wider text-gray-500">
                             <p>SELECTED PROJECTS</p>
                         </div>
-                        <div className="mt-6 text-xl md:text-3xl font-display">
+                        <div className="mt-6 text-xl md:text-2xl font-display">
                             <ProjectItem name={"DocuTalk"} onClick={onScrollToWorks} />
                             <ProjectItem name={"GetToWork"} onClick={onScrollToGetToWork} />
                             <ProjectItem name={"FoodieAI"} onClick={onScrollToFoodieAI} />
