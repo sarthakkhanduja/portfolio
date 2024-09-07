@@ -6,8 +6,8 @@ type MarqueeItemProps = {
 
 function MarqueeItem(props: MarqueeItemProps) {
     return(
-        <div className="flex flex-row font-display justify-between items-center text-3xl">
-            <p className="px-8">{props.label}</p>
+        <div className="flex flex-row font-display justify-between items-center text-3xl ">
+            <p className="px-8 z-1">{props.label}</p>
             <img src={bulletImg} className="h-5 w-5 rounded-full object-cover mx-2" alt="Bullet"/>
         </div>
     )

@@ -4,9 +4,11 @@ import Timeline from './components/Timeline';
 import ProjectDocuTalk from './components/ProjectDocuTalk';
 import ProjectGetToWork from './components/ProjectGetToWork';
 import ProjectFoodieAI from './components/ProjectFoodieAI';
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 function App() {
+
+  const [hideNav, setHideNav]= useState(false);
 
   // references for each section
   const homeRef = useRef<HTMLDivElement>(null);
@@ -22,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="snap-y snap-mandatory h-screen w-full overflow-y-scroll">
+    <div className="snap-y snap-mandatory flex flex-col h-screen w-full ">
         {/* Homepage */}
         <div ref={homeRef} className="snap-start">
           <Home  
@@ -31,12 +33,13 @@ function App() {
           onScrollToGetToWork={() => scrollToSection(getToWorkRef)}
           onScrollToFoodieAI={() => scrollToSection(foodieAIRef)}
           onScrollToContact={() => scrollToSection(contactRef)}
+          hideNav={hideNav}
           />
         </div>
 
         {/* Experience */}
         <div ref={timelineRef} className="snap-start">
-          <Timeline />
+          <Timeline setHideNav={setHideNav} />
         </div>
 
         {/* DocuTalk */}
