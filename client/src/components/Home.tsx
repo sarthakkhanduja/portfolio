@@ -66,19 +66,19 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             {/* Main Content */}
             <div className={`flex-grow flex flex-col md:flex-row md:justify-around w-full md:items-center px-4 md:px-6 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
 
-                <div className="flex flex-col  pb-2  mt-24 md:w-3/5 ">
+                <div className="flex flex-col pb-2 mt-24 lg:mt-12 md:w-3/5 ">
                     <div className="flex flex-col pb-8 text-7xl lg:text-9xl">
                         <p className="font-display font-custom">I'm Sarthak</p>
                         <p className="font-display font-custom ">Khanduja.</p>
                     </div>
-                    <div className="max-w-min inline-flex justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-800 ease-in-out hover:cursor-pointer animate-background"
+                    <div className="lg:mt-6 max-w-min inline-flex justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-800 ease-in-out hover:cursor-pointer animate-background"
                         onClick={() => {
                             window.open("https://drive.google.com/file/d/15RwiWM8LRF64dBgOckrjXuw7Q9h7X_Bq/view?usp=sharing");
                         }}>
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
                         <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
                     </div>
-                    <div className="mt-8 font-display text-xl sm:text-5xl ">
+                    <div className="mt-8 lg:mt-12 font-display text-xl sm:text-5xl ">
                         <p className="font-display">Transforming ideas into reality,</p>
                         <p className="font-display ">one line of code at a time.</p>
                     </div>
@@ -86,10 +86,10 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                 
                 <div className="flex h-full md:w-2/6 mt-10 md:mt-0 mb-10 md:mb-0">
                     <div className="w-full  ">
-                        <div className="font-display text-sm md:text-l tracking-wider text-gray-500">
+                        <div className="font-display text-sm md:text-xl tracking-wider text-gray-500">
                             <p>SELECTED PROJECTS</p>
                         </div>
-                        <div className="mt-6  text-xl md:text-3xl font-display">
+                        <div className="mt-6 text-xl md:text-3xl font-display">
                             <ProjectItem name={"DocuTalk"} onClick={onScrollToWorks} />
                             <ProjectItem name={"GetToWork"} onClick={onScrollToGetToWork} />
                             <ProjectItem name={"FoodieAI"} onClick={onScrollToFoodieAI} />
@@ -101,7 +101,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
             {/* Footer Marquee */}
             <div className={`h-[90px] z-1 w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
                 <Marquee autoFill={true}>
-                    <MarqueeItem label="Based in Windsor, ON" />
+                    <MarqueeItem label="Based in Toronto, ON" />
                     <MarqueeItem label="3+ years of experience" />
                     <MarqueeItem label="Brewing Digital Solutions" />
                 </Marquee>

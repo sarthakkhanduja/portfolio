@@ -56,7 +56,10 @@ function ProjectFoodieAI() {
                     </div>
                     {/* Tags */}
                     <div className="hidden md:flex flex-col  w-2/5 font-display justify-start font-bold items-end">
-                        <div className="text-l w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
+                        <div className="hidden md:block lg:hidden text-l w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
+                            RAG
+                        </div>
+                        <div className="hidden lg:block text-l w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
                             RAG - RETRIEVAL AUGMENTED GENERATION
                         </div>
                         <div className="text-l w-fit self-end tracking-wide py-3 px-5 my-2 font-display rounded-[30px] border-[1px] text-white border-gray-100 hover:cursor-text ease-in-out duration-200">
