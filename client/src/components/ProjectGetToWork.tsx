@@ -75,12 +75,11 @@ function ProjectGetToWork() {
             <div className=" bg-white w-full flex justify-center items-center flex-col">
                 <div
                     className="w-full rounded-xl -mt-[8rem] px-4 md:p-20 bg-gradient-to-b from-[#3C0AA5] via-[#3C0AA5] to-white">
-                    <img src={screenshot} alt="Screenshot" />
+                    <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                 </div>
-                <div className="md:-mt-20 p-16  font-display font-custom">
-                    <p className="text-l md:text-3xl text-gray-500">
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                <div className="md:-mt-24 p-16 font-display font-custom">
+                    <p className="text-lg md:text-5xl bg-gradient-to-r from-red-500 to-yellow-200 text-transparent bg-clip-text">
+                        Task Management doesn't get more efficient than this.
                     </p>
                 </div>
             </div>

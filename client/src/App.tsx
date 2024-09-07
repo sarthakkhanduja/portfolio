@@ -27,7 +27,8 @@ function App() {
     <div className="snap-y snap-mandatory flex flex-col h-screen w-full ">
         {/* Homepage */}
         <div ref={homeRef} className="snap-start">
-          <Home  
+          <Home
+          onScrollToHome={() => scrollToSection(homeRef)}
           onScrollToExperience={() => scrollToSection(timelineRef)}
           onScrollToWorks={() => scrollToSection(worksRef)}
           onScrollToGetToWork={() => scrollToSection(getToWorkRef)}

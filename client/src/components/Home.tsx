@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import About from "./About";
 
 interface HomeProps {
+    onScrollToHome: () => void;
     onScrollToExperience: () => void;
     onScrollToWorks: () => void;
     onScrollToGetToWork: () => void;
@@ -18,7 +19,7 @@ interface HomeProps {
     hideNav: boolean;
 }
 
-function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onScrollToFoodieAI, onScrollToContact,hideNav }: HomeProps) {
+function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onScrollToFoodieAI, onScrollToContact,hideNav }: HomeProps) {
     const [activeComponent, setActiveComponent] = useState<JSX.Element | null>(null);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -39,7 +40,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
     }, []);
 
     const handleClose = () => {
-        setActiveComponent(null);  // Close the active component
+        setActiveComponent(null);
     };
 
     return (
@@ -49,7 +50,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
            <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 md:px-10 justify-center transition-all duration-300 ${hideNav ? 'md:hidden' : ''} `}>
                 <div className="flex flex-grow justify-between rounded-full bg-white w-full  border-solid border-2 border-muted md:bg-transparent md:border-none ">
 
-                    <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'}`}>
+                    <div className={`flex justify-start items-center backdrop-blur-sm px-2 bg-white/50 rounded-[2rem] ${isScrolled ? 'w-auto' : 'w-1/2'} hover:cursor-pointer`} onClick={onScrollToHome}>
                         <img src={myPicture} className={`h-8 w-8 rounded-full object-cover mx-2 transition-all duration-300 ${isScrolled ? 'block' : ''}`} alt="My Picture" />
                         <h5 className="hidden md:block font-display text-xl">sarthakkhanduja. </h5>
                     </div>
@@ -78,7 +79,7 @@ function Home({ onScrollToExperience, onScrollToWorks, onScrollToGetToWork, onSc
                         <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
                         <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
                     </div>
-                    <div className="mt-8 lg:mt-12 font-display text-2xl sm:text-4xl md:text-5xl">
+                    <div className="mt-8 lg:mt-12 font-display text-2xl sm:text-4xl md:text-5xl leading-8">
                         <p className="font-display">Transforming ideas into reality,</p>
                         <p className="font-display ">one line of code at a time.</p>
                     </div>

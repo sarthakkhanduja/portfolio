@@ -8,7 +8,7 @@ function ProjectDocuTalk() {
             <div className="min-h-screen w-full bg-black">
                 <div className="px-5 md:px-14">
 
-                <div className={`h-24 w-full  pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
+                <div className={`h-24 w-full pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>1 / 3</p>
                 </div>
 
@@ -81,12 +81,11 @@ function ProjectDocuTalk() {
                 <div className=" bg-white w-full flex justify-center items-center flex-col ">
                     <div
                         className="w-full rounded-xl -mt-[8rem] px-4 md:p-20 bg-gradient-to-b from-black via-black to-white">
-                        <img src={screenshot} alt="Screenshot" />
+                        <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                     </div>
-                    <div className=" md:-mt-20 p-16 font-display font-custom">
-                        <p className="text-l md:text-3xl text-gray-500">
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    <div className="md:-mt-24 p-16 font-display font-custom">
+                        <p className="text-lg md:text-5xl bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">
+                            Get to know your files, powered by OpenAI.
                         </p>
                     </div>
                 </div>
