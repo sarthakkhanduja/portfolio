@@ -83,8 +83,8 @@ function ProjectDocuTalk() {
                         className="w-full rounded-xl -mt-[8rem] px-4 md:p-20 bg-gradient-to-b from-black via-black to-white">
                         <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                     </div>
-                    <div className="md:-mt-24 p-16 font-display font-custom">
-                        <p className="text-lg md:text-5xl bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">
+                    <div className="md:-mt-24 p-8 sm:p-16 font-display font-custom">
+                        <p className="text-3xl md:text-5xl bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">
                             Get to know your files, powered by OpenAI.
                         </p>
                     </div>

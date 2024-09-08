@@ -68,7 +68,7 @@ function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollTo
             <div className={`flex-grow flex flex-col md:flex-row md:justify-around w-full md:items-center px-4 md:px-6 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
 
                 <div className="flex flex-col pb-2 mt-24 lg:mt-12 md:w-3/5 ">
-                    <div className="flex flex-col pb-8 text-7xl lg:text-9xl">
+                    <div className="flex flex-col pb-8 text-6xl sm:text-7xl lg:text-9xl">
                         <p className="font-display font-custom">I'm Sarthak</p>
                         <p className="font-display font-custom ">Khanduja.</p>
                     </div>
