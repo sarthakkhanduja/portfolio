@@ -76,13 +76,12 @@ function ProjectFoodieAI() {
                 </div>
                 </div>
 
-                <div className=" bg-white w-full flex justify-center items-center flex-col">
-                    <div
-                        className="w-full rounded-xl -mt-[8rem] px-4 md:p-20 bg-gradient-to-b from-[#aa32c2] via-[#aa32c2] to-white">
+                <div className="bg-gradient-to-b from-[#aa32c2] via-[#417abb] to-[#41adbb] w-full flex justify-center items-center flex-col">
+                    <div className="w-full rounded-xl shrink-0 -mt-[8rem] px-4 md:p-20">
                         <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                     </div>
 
-                    <div className="md:-mt-20 p-16  font-display font-custom">
+                    <div className="md:-mt-20 p-16 font-display font-custom">
                         <p className="text-l md:text-5xl bg-gradient-to-r from-gray-800 to-gray-600 text-transparent bg-clip-text">
                             Leftover Recipes on your fingertips.
                         </p>

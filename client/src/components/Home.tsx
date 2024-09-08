@@ -44,7 +44,7 @@ function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollTo
     };
 
     return (
-        <div className="w-full min-h-screen flex flex-col bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="w-full min-h-screen flex flex-col">
 
             {/* Navbar */}
            <div className={`z-10 fixed top-0 left-0 w-full flex flex-row flex-grow items-center py-6 px-4 md:px-10 justify-center transition-all duration-300 ${hideNav ? 'md:hidden' : ''} `}>
@@ -55,7 +55,7 @@ function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollTo
                         <h5 className="hidden md:block font-display text-xl">sarthakkhanduja. </h5>
                     </div>
 
-                    <div className={`flex-row flex justify-end items-center  py-2 rounded-[2rem] transition-all duration-300  backdrop-blur-md bg-white/50 pr-2 md:pr-0`}>
+                    <div className={`flex-row flex justify-end items-center py-2 rounded-[2rem] transition-all duration-300  backdrop-blur-md bg-white/50 pr-2 md:pr-0`}>
                         <NavbarListItem label="About" onClick={() => setActiveComponent(<About onClose={handleClose} />)} />
                         <NavbarListItem label="Experience" onClick={onScrollToExperience} />
                         <NavbarListItem label="Works" onClick={onScrollToWorks} />
@@ -65,9 +65,9 @@ function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollTo
             </div>
 
             {/* Main Content */}
-            <div className={`flex-grow flex flex-col md:flex-row md:justify-around w-full md:items-center px-4 md:px-6 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
+            <div className={`flex-grow flex flex-col gap-4 sm:gap-0 justify-center md:flex-row md:justify-around w-full md:items-center px-4 md:px-6 transition-all duration-300  ${activeComponent ? 'blur-md' : ''}`}>
 
-                <div className="flex flex-col pb-2 mt-24 lg:mt-12 md:w-3/5 ">
+                <div className="flex flex-col gap-3 sm:gap-0 pb-2 mt-24 lg:mt-12 md:w-3/5 ">
                     <div className="flex flex-col pb-8 text-6xl sm:text-7xl lg:text-9xl">
                         <p className="font-display font-custom">I'm Sarthak</p>
                         <p className="font-display font-custom ">Khanduja.</p>
@@ -87,7 +87,7 @@ function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollTo
                 
                 <div className="flex h-full md:w-2/6 mt-10 md:mt-6 mb-10 md:mb-0">
                     <div className="w-full">
-                        <div className="font-display text-sm md:text-xl tracking-wider text-gray-500">
+                        <div className="font-display text-base md:text-xl tracking-wider text-gray-500">
                             <p>SELECTED PROJECTS</p>
                         </div>
                         <div className="mt-6 text-xl md:text-2xl font-display">
@@ -100,7 +100,7 @@ function Home({onScrollToHome, onScrollToExperience, onScrollToWorks, onScrollTo
             </div>
 
             {/* Footer Marquee */}
-            <div className={`h-[90px] z-1 w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
+            <div className={`h-16 sm:h-[90px] z-1 w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
                 <Marquee autoFill={true}>
                     <MarqueeItem label="Based in Toronto, ON" />
                     <MarqueeItem label="3+ years of experience" />

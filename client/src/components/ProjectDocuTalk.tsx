@@ -78,9 +78,8 @@ function ProjectDocuTalk() {
                 </div>
                 </div>
 
-                <div className=" bg-white w-full flex justify-center items-center flex-col ">
-                    <div
-                        className="w-full rounded-xl -mt-[8rem] px-4 md:p-20 bg-gradient-to-b from-black via-black to-white">
+                <div className="bg-gradient-to-b from-black via-gray-800 to-black w-full flex justify-center items-center flex-col ">
+                    <div className="w-full rounded-xl shrink-0 -mt-[8rem] px-4 md:p-20">
                         <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                     </div>
                     <div className="md:-mt-24 p-8 sm:p-16 font-display font-custom">

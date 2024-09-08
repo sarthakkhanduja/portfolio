@@ -72,9 +72,8 @@ function ProjectGetToWork() {
                 </div>
             </div>
 
-            <div className=" bg-white w-full flex justify-center items-center flex-col">
-                <div
-                    className="w-full rounded-xl -mt-[8rem] px-4 md:p-20 bg-gradient-to-b from-[#3C0AA5] via-[#3C0AA5] to-white">
+            <div className="bg-gradient-to-b from-[#3C0AA5] via-[#3C0AA5] to-whitew-full flex justify-center items-center flex-col">
+                <div className="w-full rounded-xl shrink-0 -mt-[8rem] px-4 md:p-20">
                     <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="md:-mt-24 p-16 font-display font-custom">
