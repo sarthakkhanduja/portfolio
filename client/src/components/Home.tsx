@@ -2,7 +2,6 @@ import Lottie from "lottie-react";
 import blinkingAnimation from "../assets/blinkingAnimation.json";
 import myPicture from "../assets/me.jpg";
 import Marquee from "react-fast-marquee";
-import backgroundImage from "../assets/background.svg";
 import ProjectItem from "./ProjectItem";
 import MarqueeItem from "./MarqueeItem";
 import NavbarListItem from "./NavBarListItem";
