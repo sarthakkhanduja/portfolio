@@ -87,16 +87,15 @@ function DevInternModal({ closeModal }: DevInternModalProps) {
                     {/* Content starts here */}
                     <div className="p-8 font-display  text-2xl text-gray-500">
                         <p>In the penultimate year of my undergraduate education, I landed an internship at AB InBev for the role of a Developer, Intern.</p>
-                        <p className="mt-2">I gained experience in <span className="w-fit text-black self-start px-4 py-1 mt-1 font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C]  hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">
-                            Automation</span> and <span className="w-fit self-start px-4 py-1 mt-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C]  hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">Data Processing Technologies</span>.</p>
+                        <p className="mt-2">I gained experience in Automation and Data Engineering.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Developed Automation Bots</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Built two automation bots using <span className="w-fit self-start px-4 py-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C]  hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">Blue Prism</span>, reducing ERP process complexity by 85%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Built two automation bots using Blue Prism, reducing ERP process complexity by 85%.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Implemented OCR Technology</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Utilized <span className="w-fit self-start px-4 py-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C]  hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">ABBYY OCR</span> to extract data from printed invoices and PDFs into ERP systems, improving data accuracy.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Utilized ABBYY OCR to extract data from printed invoices and PDFs into ERP systems, improving data accuracy.</p>
                     </div>
                 </div>
             </div>

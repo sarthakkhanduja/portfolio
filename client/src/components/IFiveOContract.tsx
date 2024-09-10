@@ -77,17 +77,16 @@ function IFiveOContract({ closeModal }: IFiveOContractProps) {
 
                     {/* Content starts here */}
                     <div className="p-8 font-display text-2xl text-gray-500">
-                        <p>On the basis of my performance during the first stint of my internship at AB InBev, <span className="font-bold underline">I was offered a full-time position of Senior Analyst</span>.</p>
-                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an <span className="w-fit text-black self-start px-4 py-1 mt-1 font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">
-                        Associate Solution Architect</span>.</p>
+                        <p>As an <span className="font-bold underline">AI Consultant</span>, my responsibilities were to assist and enhance the Deep Learning Team's infrastructure.</p>
+                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Developed Automation Bots</p>
-                        <p className="mt-3 font-display text-xl text-gray-500">Built two automation bots using <span className="w-fit self-start px-4 py-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">Blue Prism</span>, reducing ERP process complexity by 85%.</p>
+                        <p className="font-display text-2xl font-custom">MLOps Integration</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Integrated client-side hardware with MLOps infrastructure using Python and TCP/IP protocols, automating real-time responses and improving operational efficiency by 73%.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Implemented OCR Technology</p>
-                        <p className="mt-3 font-display text-xl text-gray-500">Utilized <span className="w-fit self-start px-4 py-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">ABBYY OCR</span> to extract data from printed invoices and PDFs into ERP systems, improving data accuracy.</p>
+                        <p className="font-display text-2xl font-custom">Designed a Re-training Application</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Designed a scalable solution using AWS Lambda to re-train machine learning models with new annotated data, addressing model drift and cutting downtime by 45%.</p>
                     </div>
                 </div>
             </div>

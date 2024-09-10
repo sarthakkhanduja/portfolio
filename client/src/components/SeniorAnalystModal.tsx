@@ -64,7 +64,7 @@ function SeniorAnalystModal({ closeModal }: SeniorAnalystModalProps) {
                             JAVASCRIPT
                         </div>
                         <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
-                            JAVA
+                            SPRING BOOT
                         </div>
                         <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
                             C#
@@ -79,23 +79,39 @@ function SeniorAnalystModal({ closeModal }: SeniorAnalystModalProps) {
                             MICROSOFT AZURE
                         </div>
                         <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
-                            AZURE SQL DATABASE
+                            AZURE DATA FACTORY
+                        </div>
+                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                            SNOWFLAKE
+                        </div>
+                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                            AZURE DEVOPS
+                        </div>
+                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                            NGINX
                         </div>
                     </div>
 
                     {/* Content starts here */}
                     <div className="p-8 font-display text-2xl text-gray-500">
                         <p>On the basis of my performance during the first stint of my internship at AB InBev, <span className="font-bold underline">I was offered a full-time position of Senior Analyst</span>.</p>
-                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an <span className="w-fit text-black self-start px-4 py-1 mt-1 font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">
-                        Associate Solution Architect</span>.</p>
+                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Developed Automation Bots</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Built two automation bots using <span className="w-fit self-start px-4 py-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">Blue Prism</span>, reducing ERP process complexity by 85%.</p>
+                        <p className="font-display text-2xl font-custom">ETL Pipeline Development</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Led the development of an ETL pipeline using Snowflake and Azure Data Factory, centralizing ERP tables into a data lake, saving over 450 developer hours annually.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Implemented OCR Technology</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Utilized <span className="w-fit self-start px-4 py-1 text-black font-display rounded-3xl border-[1px] border-black bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200 text-2xl font-custom tracking-wide">ABBYY OCR</span> to extract data from printed invoices and PDFs into ERP systems, improving data accuracy.</p>
+                        <p className="font-display text-2xl font-custom">Chatbot Integration</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Overhauled an NLP-based chatbot with C#, integrating it into a consumer portal and providing automated support to over 3,700 users.</p>
+                    </div>
+                    <div className="p-8">
+                        <p className="font-display text-2xl font-custom">Server Optimization</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Resolved critical system bugs by engineering reverse proxies with Nginx and Spring Boot, reducing server error rates by 55%.</p>
+                    </div>
+                    <div className="p-8">
+                        <p className="font-display text-2xl font-custom">CI/CD Automation</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Administered CI/CD pipelines for web applications using Azure DevOps, accelerating deployment times by 40%.</p>
                     </div>
                 </div>
             </div>
