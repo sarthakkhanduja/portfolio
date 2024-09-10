@@ -7,7 +7,7 @@ import ITCoop from "./ITCoop";
 
 interface TimelineProps {
   setHideNav: React.Dispatch<React.SetStateAction<boolean>>;
-  onScrollToExperience: () => void;  // Adding the scroll function prop
+  onScrollToExperience: () => void;  
 }
 
 export default function Timeline({ setHideNav, onScrollToExperience }: TimelineProps) {
@@ -25,13 +25,8 @@ export default function Timeline({ setHideNav, onScrollToExperience }: TimelineP
   };
 
   const toggleModal = (setStateFn: React.Dispatch<React.SetStateAction<boolean>>) => {
-    // Scroll to Timeline first and then open the modal
     onScrollToExperience();
-    
-    // Delaying the modal opening slightly to ensure scrolling is complete
-    setTimeout(() => {
-      setStateFn(prev => !prev);
-    }, 500); // Adjust the delay if necessary
+    setTimeout(() => setStateFn(prev => !prev), 500);
   };
 
   const closeModal = (setStateFn: React.Dispatch<React.SetStateAction<boolean>>) => {
@@ -41,17 +36,19 @@ export default function Timeline({ setHideNav, onScrollToExperience }: TimelineP
   const isAnyModalVisible = isDevInternModalVisible || isSeniorAnalystModalVisible || isIFiveOContract || isIFiveOCoop || isITCoop;
 
   useEffect(() => {
-    const body = document.querySelector('body');
-    if (body) {
-      body.style.overflow = isAnyModalVisible ? 'hidden' : 'auto';
-    }
-
+    const body = document.body;
     if (isAnyModalVisible) {
+      body.style.overflow = 'hidden';  // Disable background scroll
       setHideNav(true);
     } else {
+      body.style.overflow = 'auto';  // Re-enable background scroll
       setHideNav(false);
     }
-  }, [isAnyModalVisible]);
+
+    return () => {
+      body.style.overflow = 'auto';  // Cleanup in case of component unmount
+    };
+  }, [isAnyModalVisible, setHideNav]);
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center md:p-8">            
@@ -73,16 +70,11 @@ export default function Timeline({ setHideNav, onScrollToExperience }: TimelineP
               key={index}
               onMouseEnter={() => onHovering(index)}
               onMouseLeave={() => onHovering(index)}
-              onClick={() => toggleModal(item.modalSetter)}  // Use the updated toggleModal
+              onClick={() => toggleModal(item.modalSetter)}
               className={`relative flex flex-col md:items-center mb-12 md:mb-0 pl-12 md:pl-0 md:w-1/5 transition-transform duration-300 hover:scale-105 hover:cursor-pointer ${hovered[index] ? 'scale-105' : ''}`}
             >
-              {/* Bullet */}
               <div className="absolute left-0 top-2.5 md:static size-4 z-40 bg-gray-500 rounded-full border-2 border-white md:mb-4"></div>
-
-              {/* Date */}
               <h3 className={`mb-2 md:mb-4 p-2 rounded-3xl text-sm md:text-xl font-display font-custom text-gray-900 ${hovered[index] ? 'bg-[#DFFF9C]' : ''}`}>{item.date}</h3>
-
-              {/* Title */}
               <div className="flex flex-col items-start md:items-center justify-center">
                 <h3 className={`p-2 text-2xl md:text-3xl font-display font-custom leading-none text-gray-700 ${hovered[index] ? 'bg-[#DFFF9C]' : ''} rounded-3xl`}>{item.company}</h3>
                 <h3 className="mt-1 pl-2 text-sm md:text-lg font-display font-custom tracking-wide text-gray-500">{item.type}</h3>
