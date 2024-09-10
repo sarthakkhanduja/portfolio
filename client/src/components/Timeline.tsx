@@ -5,7 +5,12 @@ import IFiveOContract from "./IFiveOContract";
 import IFiveOCoop from "./IFiveOCoop";
 import ITCoop from "./ITCoop";
 
-export default function Timeline({ setHideNav }: { setHideNav: React.Dispatch<React.SetStateAction<boolean>> }) {
+interface TimelineProps {
+  setHideNav: React.Dispatch<React.SetStateAction<boolean>>;
+  onScrollToExperience: () => void;  // Adding the scroll function prop
+}
+
+export default function Timeline({ setHideNav, onScrollToExperience }: TimelineProps) {
   const [hovered, setHovered] = useState<boolean[]>([false, false, false, false, false]);
   const [isDevInternModalVisible, setIsDevInternModalVisible] = useState(false);
   const [isSeniorAnalystModalVisible, setIsSeniorAnalystModalVisible] = useState<boolean>(false);
@@ -20,7 +25,13 @@ export default function Timeline({ setHideNav }: { setHideNav: React.Dispatch<Re
   };
 
   const toggleModal = (setStateFn: React.Dispatch<React.SetStateAction<boolean>>) => {
-    setStateFn(prev => !prev);
+    // Scroll to Timeline first and then open the modal
+    onScrollToExperience();
+    
+    // Delaying the modal opening slightly to ensure scrolling is complete
+    setTimeout(() => {
+      setStateFn(prev => !prev);
+    }, 500); // Adjust the delay if necessary
   };
 
   const closeModal = (setStateFn: React.Dispatch<React.SetStateAction<boolean>>) => {
@@ -62,7 +73,7 @@ export default function Timeline({ setHideNav }: { setHideNav: React.Dispatch<Re
               key={index}
               onMouseEnter={() => onHovering(index)}
               onMouseLeave={() => onHovering(index)}
-              onClick={() => toggleModal(item.modalSetter)}
+              onClick={() => toggleModal(item.modalSetter)}  // Use the updated toggleModal
               className={`relative flex flex-col md:items-center mb-12 md:mb-0 pl-12 md:pl-0 md:w-1/5 transition-transform duration-300 hover:scale-105 hover:cursor-pointer ${hovered[index] ? 'scale-105' : ''}`}
             >
               {/* Bullet */}

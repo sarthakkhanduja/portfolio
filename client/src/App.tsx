@@ -40,7 +40,7 @@ function App() {
 
         {/* Experience */}
         <div ref={timelineRef} className="snap-start">
-          <Timeline setHideNav={setHideNav} />
+          <Timeline setHideNav={setHideNav} onScrollToExperience={() => scrollToSection(timelineRef)} />
         </div>
 
         {/* DocuTalk */}
