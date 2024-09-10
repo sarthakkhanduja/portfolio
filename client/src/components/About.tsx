@@ -8,40 +8,40 @@ type AboutProps = {
 function About({ onClose }: AboutProps) {
 
     return (
-        <div className="fixed top-0 right-0 w-full lg:w-3/5 h-screen overflow-y-auto bg-white shadow-lg px-2 z-100">
-            <div className="h-48 flex flex-row justify-between items-center">
+        <div className="fixed top-0 right-0 w-full lg:w-3/5 h-screen bg-white shadow-lg px-2 z-100">
+
+            {/* Picture and Close Button */}
+            <div className="h-24 sm:h-48 flex flex-row justify-between items-center pt-12 sm:pt-0">
                 <div>
-                    <img src={myPicture} className="size-24 rounded-full object-cover mx-8" alt="My Picture" />
+                    <img src={myPicture} className="size-12 sm:size-24 rounded-full object-cover mx-8" alt="My Picture" />
                 </div>
                 <div>
                     <button
                         onClick={onClose}
-                        className="mx-4 p-4 w-36 rounded-[2rem] border-[1px] border-black text-2xl font-display font-semibold hover:bg-black hover:text-white ease-in duration-100"
+                        className="mx-4 p-3 sm:p-4 w-24 sm:w-36 rounded-[2rem] border-[1px] border-black text-lg sm:text-2xl font-display font-semibold hover:bg-black hover:text-white ease-in duration-100"
                     >
                         Close
                     </button>
                 </div>
             </div>
-            {/* More content here */}
-            <div className="h-16 flex flex-row justify-start items-center mx-8 text-sm sm:text-xl text-nowrap">
-                <div className="p-2 px-3 font-display rounded-3xl border-[1px] border-black mr-4">
+            
+            {/* Tags */}
+            <div className="h-16 flex flex-row justify-between sm:justify-start items-start sm:items-center sm:mx-8 text-sm sm:text-xl text-nowrap p-8 sm:p-0">
+                <div className="p-2 px-3 font-display text-xs sm:text-lg rounded-3xl border-[1px] border-black mr-1 sm:mr-4">
                     SOFTWARE ENGINEER
                 </div>
-                <div className="p-2 px-3 font-display rounded-3xl border-[1px] border-black mr-4">
+                <div className="p-2 px-3 font-display text-xs sm:text-lg rounded-3xl border-[1px] border-black ml-1 sm:ml-0 sm:mr-4">
                     BACKEND DEVELOPER
                 </div>
             </div>
 
             {/* Initial head text */}
-            <div className="h-auto mx-8 mt-12 font-display text-2xl  md:text-4xl font-semibold flex flex-row items-center">
+            <div className="h-auto mx-8 mt-8 sm:mt-12 font-display text-xl md:text-4xl font-semibold flex flex-row items-center">
                 <p className="text-nowrap">A recent</p>
-                <span className="pl-2 pr-6 mx-2  font-display rounded-3xl border-[1px] border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
-                    <img src={gradCap} className="size-12 mr-2" alt="Graduation cap" />
-                    Master's graduate
-                </span>
+                <span>Master's graduate</span>
                 <p>with</p>
             </div>
-            <div className="h-auto mx-8 font-display  text-2xl  md:text-4xl font-semibold">
+            <div className="h-auto mx-8 font-display text-xl md:text-4xl font-semibold">
                 <p>experience in large-scale FMCG corporates and fast-paced startups.</p>
             </div>
 
@@ -49,7 +49,7 @@ function About({ onClose }: AboutProps) {
             {/* Additional content sections */}
 
             {/* Second text */}
-            <div className="h-auto mx-8 mt-10 font-display  text-2xl  md:text-4xl font-semibold flex flex-row items-center">
+            <div className="h-auto mx-8 mt-10 font-display text-xl md:text-4xl font-semibold flex flex-row items-center">
                 <p>I'm always eager to dive into new domains and technologies, investing the time and effort needed to master them.</p>
             </div>
 
@@ -58,7 +58,7 @@ function About({ onClose }: AboutProps) {
                 <p className="text-2xl  md:text-4xl font-semibold">Unique Selling Point</p>
                 <p className="text-2xl md:text-4xl mt-6 text-gray-500 font-semibold">
                     I sincerely believe
-                    <span className="px-2 mx-2 font-display rounded-3xl border-[1px] text-black border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
+                    <span className="hidden md:block px-2 mx-2 font-display rounded-3xl border-[1px] text-black border-black inline-flex items-center justify-center w-auto bg-[#DFFF9C] hover:cursor-default ease-in-out duration-200">
                         Adaptability
                     </span>
                     is a skill that can be honed to perfection. Be it for hard skills, or work cultures - I'm flexible enough to adapt.
