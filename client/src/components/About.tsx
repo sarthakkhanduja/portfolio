@@ -1,5 +1,4 @@
 import myPicture from "../assets/me.jpg";
-import gradCap from "../assets/graduationCap.svg";
 
 type AboutProps = {
     onClose: () => void;
