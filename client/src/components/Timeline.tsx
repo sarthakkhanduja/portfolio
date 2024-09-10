@@ -51,7 +51,7 @@ export default function Timeline({ setHideNav, onScrollToExperience }: TimelineP
   }, [isAnyModalVisible, setHideNav]);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center md:p-8">            
+    <div className="min-h-screen flex flex-col justify-center items-start md:p-8">            
       <div className={`w-full px-4 py-8 md:mb-20 mt-20 md:mt-0 font-display font-custom text-5xl sm:text-6xl md:text-8xl text-left ${isAnyModalVisible ? 'blur-xl' : ''}`}>
         <p>Experience</p>
       </div>

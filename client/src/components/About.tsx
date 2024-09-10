@@ -75,11 +75,11 @@ function About({ onClose }: AboutProps) {
 
 
             {/* Let's Connect */}
-            <div className="h-auto mx-4 sm:mx-8 mt-8 font-display flex flex-col">
+            <div className="h-auto mx-4 sm:mx-8 mt-2 sm:mt-8 font-display flex flex-col">
                 <p className="text-2xl md:text-4xl mt-6 font-semibold">Let's connect!</p>
             </div>
 
-            <div className="h-auto mt-3 mb-12 md:my-14 flex flex-row gap-[0.1rem] sm:gap-4 items-start justify-start text-2xl md:text-4xl font-display font-semibold">
+            <div className="h-auto mt-3 mb-20 md:my-14 flex flex-row gap-[0.1rem] sm:gap-4 items-start justify-start text-2xl md:text-4xl font-display font-semibold">
                 <div className="mx-4 sm:mx-8 text-lg sm:text-4xl">
                     <p className="py-2 border-b-[1px] border-gray-400 cursor-pointer relative overflow-hidden group"
                         onClick={() => {
