@@ -6,7 +6,7 @@ interface DevInternModalProps {
 
 function DevInternModal({ closeModal }: DevInternModalProps) {
     return (
-        <div className="flex items-start justify-center h-screen p-4 mt-20 md:mt-0">
+        <div className="flex items-start justify-center h-screen p-4 mt-28 md:mt-0">
             <div className="w-full md:w-3/4 m-auto border-black border-[1px] rounded-3xl shadow-2xl bg-white h-[90%] overflow-y-auto">
                 <div className="flex flex-col">
                     <div className="flex flex-row w-full">

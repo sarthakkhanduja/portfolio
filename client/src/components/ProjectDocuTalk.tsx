@@ -78,12 +78,12 @@ function ProjectDocuTalk() {
                 </div>
                 </div>
 
-                <div className="bg-gradient-to-b from-black via-gray-800 to-black w-full flex justify-center items-center flex-col ">
+                <div className="bg-black w-full flex justify-center items-center flex-col ">
                     <div className="w-full rounded-xl shrink-0 -mt-[8rem] px-4 md:p-20">
                         <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                     </div>
                     <div className="md:-mt-24 p-8 sm:p-16 font-display font-custom">
-                        <p className="text-3xl md:text-5xl bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">
+                        <p className="hidden lg:block text-3xl md:text-5xl bg-gradient-to-r from-blue-marguerite-500 to-jade-400 text-transparent bg-clip-text">
                             Get to know your files, powered by OpenAI.
                         </p>
                     </div>

@@ -4,10 +4,10 @@ import Timeline from './components/Timeline';
 import ProjectDocuTalk from './components/ProjectDocuTalk';
 import ProjectGetToWork from './components/ProjectGetToWork';
 import ProjectFoodieAI from './components/ProjectFoodieAI';
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import ReactGA from 'react-ga4';
 
 function App() {
-
   const [hideNav, setHideNav]= useState(false);
 
   // references for each section
@@ -18,9 +18,16 @@ function App() {
   const foodieAIRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
-  // Function to scroll to a specific section
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+  // Initialize Google Analytics when the app mounts
+  useEffect(() => {
+    ReactGA.initialize('G-XXXXXXX'); // Replace with your GA4 Measurement ID
+    ReactGA.send('pageview');
+  }, []);
+
+  // Function to scroll to a specific section and log a page view for each scroll
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>, sectionName: string) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+    ReactGA.send({ hitType: "pageview", page: `/${sectionName}` });
   };
 
   return (
@@ -28,19 +35,19 @@ function App() {
         {/* Homepage */}
         <div ref={homeRef} className="snap-start">
           <Home
-          onScrollToHome={() => scrollToSection(homeRef)}
-          onScrollToExperience={() => scrollToSection(timelineRef)}
-          onScrollToWorks={() => scrollToSection(worksRef)}
-          onScrollToGetToWork={() => scrollToSection(getToWorkRef)}
-          onScrollToFoodieAI={() => scrollToSection(foodieAIRef)}
-          onScrollToContact={() => scrollToSection(contactRef)}
+          onScrollToHome={() => scrollToSection(homeRef, 'home')}
+          onScrollToExperience={() => scrollToSection(timelineRef, 'experience')}
+          onScrollToWorks={() => scrollToSection(worksRef, 'docutalk')}
+          onScrollToGetToWork={() => scrollToSection(getToWorkRef, 'gettowork')}
+          onScrollToFoodieAI={() => scrollToSection(foodieAIRef, 'foodieai')}
+          onScrollToContact={() => scrollToSection(contactRef, 'contact')}
           hideNav={hideNav}
           />
         </div>
 
         {/* Experience */}
         <div ref={timelineRef} className="snap-start">
-          <Timeline setHideNav={setHideNav} onScrollToExperience={() => scrollToSection(timelineRef)} />
+          <Timeline setHideNav={setHideNav} onScrollToExperience={() => scrollToSection(timelineRef, 'experience')} />
         </div>
 
         {/* DocuTalk */}
@@ -60,7 +67,7 @@ function App() {
 
         {/* Contact */}
         <div ref={contactRef} className="snap-start">
-          <Contact onScrollToHome={() => scrollToSection(homeRef)} />
+          <Contact onScrollToHome={() => scrollToSection(homeRef, 'home')} />
         </div>
     </div>
   );

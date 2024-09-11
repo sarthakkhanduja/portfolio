@@ -72,12 +72,12 @@ function ProjectGetToWork() {
                 </div>
             </div>
 
-            <div className="bg-gradient-to-b from-[#3C0AA5] via-[#3C0AA5] to-whitew-full flex justify-center items-center flex-col">
+            <div className="bg-[#3C0AA5] w-full flex justify-center items-center flex-col">
                 <div className="w-full rounded-xl shrink-0 -mt-[8rem] px-4 md:p-20">
                     <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                 </div>
                 <div className="md:-mt-24 p-16 font-display font-custom">
-                    <p className="text-lg md:text-5xl bg-gradient-to-r from-red-500 to-yellow-200 text-transparent bg-clip-text">
+                    <p className="hidden lg:block text-lg md:text-5xl bg-gradient-to-r from-red-500 to-yellow-200 text-transparent bg-clip-text">
                         Task Management doesn't get more efficient than this.
                     </p>
                 </div>
