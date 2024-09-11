@@ -8,7 +8,7 @@ function ProjectFoodieAI() {
             <div className="min-h-screen w-full bg-[#aa32c2] ">
                 <div className="px-5 md:px-14">
 
-                <div className={`h-24 w-full  pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
+                <div className={`h-24 w-full pb-8 pt-32 font-display font-custom text-2xl text-gray-200`}>
                     <p>3 / 3</p>
                 </div>
 
@@ -81,8 +81,8 @@ function ProjectFoodieAI() {
                         <img className="rounded-3xl" src={screenshot} alt="Screenshot" />
                     </div>
 
-                    <div className="md:-mt-20 p-16 font-display font-custom">
-                        <p className="hidden lg:block text-l md:text-5xl bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-transparent bg-clip-text">
+                    <div className="md:-mt-24 sm:p-16 font-display font-custom">
+                        <p className="hidden lg:block text-3xl md:text-5xl bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-transparent bg-clip-text">
                             Leftover Recipes on your fingertips.
                         </p>
                     </div>

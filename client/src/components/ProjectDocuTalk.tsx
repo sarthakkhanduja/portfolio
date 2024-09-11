@@ -16,7 +16,7 @@ function ProjectDocuTalk() {
                 <div className=" py-8 h-3/5 w-full flex flex-row justify-between">
 
                     {/* Left Hero Section */}
-                    <div className="font-display flex flex-col gap-10 md:gap-12 justify-around  pb-32">
+                    <div className="font-display flex flex-col gap-10 md:gap-12 justify-around pb-32">
                         {/* Title */}
                         <div className="flex flex-col text-white font-custom">
                             <p className="text-5xl md:text-7xl">DocuTalk</p>
