@@ -85,16 +85,15 @@ function ITCoop({ closeModal }: ITCoopProps) {
 
                     {/* Content starts here */}
                     <div className="mt-8 px-8 font-display text-2xl text-gray-500">
-                        <p>I pursued my second Co-op work term as an IT Services Delivery Co-op.</p>
-                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
+                        <p>After completing my initial co-op, I took on the role of IT Services Delivery Co-op for my second work term. <br></br>Despite the title, my contributions extended far beyond traditional IT support, as I applied my software engineering skills to drive significant improvements in infrastructure and operational efficiency.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Engineered client-centric Web Portal</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Built two automation bots using Blue Prism, reducing ERP process complexity by 85%.</p>
+                        <p className="font-display text-2xl font-custom">Network Infrastructure Optimization</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">One of my key responsibilities was to enhance the performance and reliability of the company’s network infrastructure. I achieved this by streamlining traffic management with <span className="text-gray-800 font-custom">Azure load balancers</span>, optimizing network distribution, and reducing bandwidth latency by 20%. This effort not only improved the user experience across all digital platforms but also boosted the overall efficiency of network resources.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Designed a Re-training Application</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Utilized ABBYY OCR to extract data from printed invoices and PDFs into ERP systems, improving data accuracy.</p>
+                        <p className="font-display text-2xl font-custom">Standardization of Device Refresh Cycles</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Recognizing inconsistencies in hardware performance, I standardized the device refresh cycles across the company's North American operations, which <span className="text-gray-800 font-custom">impacted over 19,000 users</span>. By implementing a structured and proactive approach, I <span className="text-gray-800 font-custom">reduced hardware failures by 15%</span>, significantly improving productivity and minimizing downtime. Leveraging tools like <span className="text-gray-800 font-custom">PowerShell</span> for automation and <span className="text-gray-800 font-custom">Intune</span> for device management, I ensured a smoother, more predictable hardware lifecycle.</p>
                     </div>
                 </div>
             </div>

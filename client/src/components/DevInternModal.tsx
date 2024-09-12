@@ -104,23 +104,23 @@ function DevInternModal({ closeModal }: DevInternModalProps) {
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Developed Automation Bots</p>
                         <p className="mt-3 font-display text-2xl text-gray-500">Our basic aim was to identify automation opportunities within existing workflows, and automate the redundant and mundane tasks, such as ERP data entry, data extraction, and data validation.
-                            <br></br>Hence, building automation bots using RPA tools like Automation Anywhere and Blue Prism was the first method we resorted toward. Eventually, the applications we developed became more sophiticated and we started using Microsoft Power Apps.</p>
+                            <br></br>Hence, building automation bots using RPA tools like <span className="text-gray-800 font-custom">Automation Anywhere</span> and <span className="text-gray-800 font-custom">Blue Prism</span> was the first method we resorted toward. Eventually, the applications we developed became more sophiticated and we started using <span className="text-gray-800 font-custom">Microsoft Power Apps</span>.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom italic text-gray-700">Soon after we realized that ROI that went into creating and maintaining automation bots was not enough, and hence, my team called out the limitations of RPA.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Engineered Progressive Web Applications(PWAs)</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Recognizing the limitations of RPA, I spearheaded the transition towards developing full-stack web applications using the MERN stack, which catered to over 3,700 users across various use cases, including COVID-19 tracking, a global complaints portal, and an office seat booking application.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Recognizing the limitations of RPA, I spearheaded the transition towards developing full-stack web applications using the <span className="text-gray-800 font-custom">React</span> and <span className="text-gray-800 font-custom">Node.js</span> stack, which catered to <span className="text-gray-800 font-custom">over 2,600 users</span> across various use cases, including COVID-19 tracking, a global complaints portal, and an office seat booking application.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Implemented OCR Technology</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">A very peculiar use case of automation was extracting text from Invoice PDFs and Images, this is where we implemented OCR technology using ABBYY OCR.
+                        <p className="mt-3 font-display text-2xl text-gray-500">A very peculiar use case of automation was extracting text from Invoice PDFs and Images, this is where we implemented OCR technology using <span className="text-gray-800 font-custom">ABBYY OCR</span>.
                             <br></br>By integrating OCR with the automation bots, I was able to streamline a significant portion of the workflow and release valuable FTEs (full-time equivalents) for the organization.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Data Engineering Principles</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">As the organization's digital solutions continued to grow, I applied my data engineering principles to centralize and visualize the data, creating dashboards for stakeholders using tools like Anaplan and Power BI.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">As the organization's digital solutions continued to grow, I applied my data engineering principles to centralize and visualize the data, creating dashboards for stakeholders using tools like <span className="text-gray-800 font-custom">Anaplan</span> and <span className="text-gray-800 font-custom">Power BI</span>.</p>
                     </div>
                 </div>
             </div>

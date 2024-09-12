@@ -112,22 +112,22 @@ function SeniorAnalystModal({ closeModal }: SeniorAnalystModalProps) {
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Engineered an ETL Pipeline</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Due to the sparse distribution of ERP tables within different teams, the reporting workflows screamed out the requirement of a centralized data lake.<br></br>Realizing this gap, I led the development of an ETL pipeline using PySpark, Snowflake and Azure Data Factory, centralizing ERP tables into a data lake, saving over 450 developer hours annually.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Due to the sparse distribution of ERP tables within different teams, the reporting workflows screamed out the requirement of a centralized data lake.<br></br>Realizing this gap, I led the development of an ETL pipeline using <span className="text-gray-800 font-custom">PySpark</span>, <span className="text-gray-800 font-custom">Snowflake</span> and <span className="text-gray-800 font-custom">Azure Data Factory</span>, centralizing ERP tables into a data lake, <span className="text-gray-800 font-custom">saving over 450 developer hours annually</span>.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom italic text-gray-700">At this point, I was handed the responsibilities of an Associate Solution Architect, where I had to overlook the architecture of automation solutions for over 5 separate departments - ranging from Finance Planning and Accounting to Procurement and Operations.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Overhauled and Integrated a Chatbot</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">One of the teams in Prague was using a legacy NLP-based chatbot made using .NET, C#, and Microsoft Azure. Soon after, there was a requirement of integrating it into the Customer Complaints Portal. <br></br>I architected the solution for this project, which included overhauling this chatbot - eventually providing automated support to over 3700 users.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">One of the teams in Prague was using a legacy <span className="text-gray-800 font-custom"></span>NLP-based chatbot made using <span className="text-gray-800 font-custom">.NET</span>, <span className="text-gray-800 font-custom">C#</span>, and <span className="text-gray-800 font-custom">Microsoft Azure</span>. Soon after, there was a requirement of integrating it into the Customer Complaints Portal. <br></br>I architected the solution for this project, which included overhauling this chatbot - eventually providing automated support to <span className="text-gray-800 font-custom">over 3700 users</span>.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Server Optimization</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">With the growth of PWAs, problems ranging from 504 server codes and CNAME record errors, to certificate issues came to the forefront more often than we'd have thought.<br></br> I've resolved these critical system bugs by engineering reverse proxies with Nginx and Azure Load Balancers, reducing server error rates by 55%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">With the growth of PWAs, problems ranging from 504 server codes and CNAME record errors, to certificate issues came to the forefront more often than we'd have thought.<br></br> I've resolved these critical system bugs by engineering reverse proxies with <span className="text-gray-800 font-custom">Nginx</span> and <span className="text-gray-800 font-custom">Azure Load Balancers, reducing server error rates by 55%</span>.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Standardized CI/CD Workflows</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">As part of the Solution Architecture team, I administered the CI/CD pipelines for our web applications. To streamline the deployment process, I leveraged Docker to containerize the applications, and integrated Azure DevOps as the orchestration platform - accelerating the deployment times by 40%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">As part of the Solution Architecture team, I administered the <span className="text-gray-800 font-custom">CI/CD pipelines</span> for our web applications. To streamline the deployment process, I leveraged <span className="text-gray-800 font-custom">Docker</span> to containerize the applications, and integrated <span className="text-gray-800 font-custom">Azure DevOps</span> as the orchestration platform - <span className="text-gray-800 font-custom">accelerating the deployment times by 40%</span>.</p>
                     </div>
                 </div>
             </div>
