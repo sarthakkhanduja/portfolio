@@ -98,7 +98,7 @@ function Home({
             <p className="font-display font-custom ">Khanduja.</p>
           </div>
           <div className="lg:mt-6 max-w-min inline-flex justify-start items-center border-2 border-[#4FC153] rounded-3xl transition-colors duration-800 ease-in-out hover:cursor-pointer animate-background"
-            onClick={() => window.open("https://drive.google.com/file/d/15RwiWM8LRF64dBgOckrjXuw7Q9h7X_Bq/view?usp=sharing")}
+            onClick={() => window.open("https://drive.google.com/file/d/1hgu1fB564qWMtqFQLRVILN6QANc5G5UO/view?usp=sharing")}
           >
             <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
             <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
