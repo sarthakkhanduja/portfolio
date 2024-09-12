@@ -6,13 +6,13 @@ interface IFiveOContractProps {
 
 function IFiveOContract({ closeModal }: IFiveOContractProps) {
     return (
-        <div className="flex items-start justify-center h-screen p-4 mt-20 md:mt-0">
+        <div className="flex items-start justify-center h-screen p-4 mt-28 md:mt-0">
             <div className="w-full md:w-3/4 m-auto border-black border-[1px] rounded-3xl shadow-2xl bg-white z-100 h-[90%] overflow-y-auto ">
                 <div className="flex flex-col">
                     <div className="flex flex-row w-full">
                         {/* Title, Company */}
                         <div className="flex flex-col justify-start font-display p-8 w-3/5">
-                            <p className="text-3xl lg:text-4xl font-custom">Software Engineer, Contract</p>
+                            <p className="text-3xl lg:text-6xl font-custom">Software Engineer, Contract</p>
                             <div className="w-fit self-start px-4 py-1 mt-4 font-display rounded-3xl border-[1px] border-black bg-[#ffc0bc] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">
                                 i-5O
                             </div>
@@ -58,19 +58,19 @@ function IFiveOContract({ closeModal }: IFiveOContractProps) {
                     </div>
 
                     <div className="flex flex-row justify-start items-center mx-8 flex-wrap gap-2">
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             PYTHON
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             MACHINE LEARNING
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             COMPUTER VISION
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             PYTORCH
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black mr-4">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             AMAZON WEB SERVICES
                         </div>
                         

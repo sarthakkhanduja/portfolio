@@ -6,13 +6,13 @@ interface IFiveOCoopProps {
 
 function IFiveOCoop({ closeModal }: IFiveOCoopProps) {
     return (
-        <div className="flex items-start justify-center h-screen p-4  mt-20 md:mt-0">
-            <div className="w-full md:w-3/4 m-auto border-black border-[1px] rounded-3xl shadow-2xl  bg-white z-100 h-[90%] overflow-y-auto">
+        <div className="flex items-start justify-center h-screen p-4 mt-28 md:mt-0">
+            <div className="w-full md:w-3/4 m-auto border-black border-[1px] rounded-3xl shadow-2xl bg-white z-100 h-[90%] overflow-y-auto">
                 <div className="flex flex-col">
                     <div className="flex flex-row w-full">
                         {/* Title, Company */}
                         <div className="flex flex-col justify-start font-display p-8 w-3/5">
-                            <p className="text-3xl lg:text-4xl font-custom">Software Engineer, Co-op</p>
+                            <p className="text-3xl lg:text-6xl font-custom">Software Engineer, Co-op</p>
                             <div className="w-fit self-start px-4 py-1 mt-4 font-display rounded-3xl border-[1px] border-black bg-[#ffc0bc] hover:cursor-default ease-in-out duration-200 text-xl font-custom tracking-wide">
                                 i-5O
                             </div>
@@ -57,22 +57,22 @@ function IFiveOCoop({ closeModal }: IFiveOCoopProps) {
                     </div>
 
                     <div className="flex flex-row justify-start items-center mx-8 flex-wrap gap-2">
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             PYTHON
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             JAVASCRIPT
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             REACT
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             NODE.JS
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             AMAZON WEB SERVICES
                         </div>
-                        <div className="p-2 font-display text-xs px-4 rounded-3xl border-[1px] border-black">
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             APACHE KAFKA
                         </div>
                     </div>
