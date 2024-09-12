@@ -65,7 +65,7 @@ function SeniorAnalystModal({ closeModal }: SeniorAnalystModalProps) {
                             JAVASCRIPT
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
-                            SPRING BOOT
+                            AZURE LOAD BALANCERS
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             C#
@@ -75,6 +75,12 @@ function SeniorAnalystModal({ closeModal }: SeniorAnalystModalProps) {
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             NODE.JS
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
+                            EXPRESS.JS
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
+                            PYSPARK
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             MICROSOFT AZURE
@@ -91,28 +97,37 @@ function SeniorAnalystModal({ closeModal }: SeniorAnalystModalProps) {
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             NGINX
                         </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
+                            MICROSOFT POWER APPS
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
+                            DOCKER
+                        </div>
                     </div>
 
                     {/* Content starts here */}
-                    <div className="p-8 font-display text-2xl text-gray-500">
+                    <div className="mt-8 p-8 font-display text-2xl text-gray-500">
                         <p>On the basis of my performance during the first stint of my internship at AB InBev, <span className="font-bold underline">I was offered a full-time position of Senior Analyst</span>.</p>
-                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
+                        <p className="mt-2">I could feel that my role and responsibilities had significantly evolved, and I could see the change in the way I approached every problem now.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">ETL Pipeline Development</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Led the development of an ETL pipeline using Snowflake and Azure Data Factory, centralizing ERP tables into a data lake, saving over 450 developer hours annually.</p>
+                        <p className="font-display text-2xl font-custom">Engineered an ETL Pipeline</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Due to the sparse distribution of ERP tables within different teams, the reporting workflows screamed out the requirement of a centralized data lake.<br></br>Realizing this gap, I led the development of an ETL pipeline using PySpark, Snowflake and Azure Data Factory, centralizing ERP tables into a data lake, saving over 450 developer hours annually.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Chatbot Integration</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Overhauled an NLP-based chatbot with C#, integrating it into a consumer portal and providing automated support to over 3,700 users.</p>
+                        <p className="font-display text-2xl font-custom italic text-gray-700">At this point, I was handed the responsibilities of an Associate Solution Architect, where I had to overlook the architecture of automation solutions for over 5 separate departments - ranging from Finance Planning and Accounting to Procurement and Operations.</p>
+                    </div>
+                    <div className="p-8">
+                        <p className="font-display text-2xl font-custom">Overhauled and Integrated a Chatbot</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">One of the teams in Prague was using a legacy NLP-based chatbot made using .NET, C#, and Microsoft Azure. Soon after, there was a requirement of integrating it into the Customer Complaints Portal. <br></br>I architected the solution for this project, which included overhauling this chatbot - eventually providing automated support to over 3700 users.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Server Optimization</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Resolved critical system bugs by engineering reverse proxies with Nginx and Spring Boot, reducing server error rates by 55%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">With the growth of PWAs, problems ranging from 504 server codes and CNAME record errors, to certificate issues came to the forefront more often than we'd have thought.<br></br> I've resolved these critical system bugs by engineering reverse proxies with Nginx and Azure Load Balancers, reducing server error rates by 55%.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">CI/CD Automation</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Administered CI/CD pipelines for web applications using Azure DevOps, accelerating deployment times by 40%.</p>
+                        <p className="font-display text-2xl font-custom">Standardized CI/CD Workflows</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">As part of the Solution Architecture team, I administered the CI/CD pipelines for our web applications. To streamline the deployment process, I leveraged Docker to containerize the applications, and integrated Azure DevOps as the orchestration platform - accelerating the deployment times by 40%.</p>
                     </div>
                 </div>
             </div>

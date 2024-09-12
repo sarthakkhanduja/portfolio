@@ -70,6 +70,9 @@ function IFiveOCoop({ closeModal }: IFiveOCoopProps) {
                             NODE.JS
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
+                            REDIS
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
                             AMAZON WEB SERVICES
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black">
@@ -78,17 +81,18 @@ function IFiveOCoop({ closeModal }: IFiveOCoopProps) {
                     </div>
 
                     {/* Content starts here */}
-                    <div className="p-8 font-display text-2xl text-gray-500">
-                        <p>As an <span className="font-bold underline">AI Consultant</span>, my responsibilities were to assist and enhance the Deep Learning Team's infrastructure.</p>
-                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
+                    <div className="mt-8 px-8 font-display text-2xl text-gray-500">
+                        <p>Initially brought on as a contractor at i-5O, my dedication and impactful results led to being <span className="font-bold underline">offered the opportunity to complete my Co-op Work Term with the company as a Software Engineering Co-op.</span> This transition was a rewarding recognition of my hard work and commitment.</p>
                     </div>
-                    <div className="p-8">
+                    <div className="px-8 py-12">
                         <p className="font-display text-2xl font-custom">Engineered client-centric Web Portal</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Built two automation bots using Blue Prism, reducing ERP process complexity by 85%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">One of my key responsibilities was to develop the backend for a centralized client portal, enabling real-time tracking of KPIs from our computer vision models. I designed and engineered the backend using <span className="text-gray-800 font-custom">Node.js</span> and integrated <span className="text-gray-800 font-custom">Apache Kafka</span> to manage the flow of real-time data streams efficiently. 
+                            <br></br>This solution not only reduced data refresh time for KPI dashboards by 40%, but also improved decision-making speed and operational visibility for clients. By leveraging tools like <span className="text-gray-800 font-custom">Redis</span> for caching and <span className="text-gray-800 font-custom">MongoDB</span> for data storage, I ensured scalability, reliability, and faster performance, empowering clients with up-to-the-minute insights.</p>
                     </div>
                     <div className="p-8">
-                        <p className="font-display text-2xl font-custom">Designed a Re-training Application</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Utilized ABBYY OCR to extract data from printed invoices and PDFs into ERP systems, improving data accuracy.</p>
+                        <p className="font-display text-2xl font-custom">MVP for the Re-Training Application</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Created an MVP for the re-training application using <span className="text-gray-800 font-custom">AWS S3</span> for media storage, <span className="text-gray-800 font-custom">AWS Lambda</span> for serverless processing, and <span className="text-gray-800 font-custom">PyTorch</span> with <span className="text-gray-800 font-custom">Python</span> for model training.The MVP facilitated real-time alerts within our MLOps pipeline, automatically capturing and annotating new data from the camera. This streamlined the retraining process and triggered unit testing before deployment. 
+                            <br></br>By leveraging these technologies, I laid the groundwork for scalable development, enabling future enhancements and adaptability as the system evolved.</p>
                     </div>
                 </div>
             </div>

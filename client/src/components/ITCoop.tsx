@@ -84,8 +84,8 @@ function ITCoop({ closeModal }: ITCoopProps) {
                     </div>
 
                     {/* Content starts here */}
-                    <div className="p-8 font-display text-2xl text-gray-500">
-                        <p>As an <span className="font-bold underline">AI Consultant</span>, my responsibilities were to assist and enhance the Deep Learning Team's infrastructure.</p>
+                    <div className="mt-8 px-8 font-display text-2xl text-gray-500">
+                        <p>I pursued my second Co-op work term as an IT Services Delivery Co-op.</p>
                         <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
                     </div>
                     <div className="p-8">

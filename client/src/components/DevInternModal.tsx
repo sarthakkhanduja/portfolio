@@ -97,8 +97,8 @@ function DevInternModal({ closeModal }: DevInternModalProps) {
                     </div>
 
                     {/* Content starts here */}
-                    <div className="md:mt-8 px-8 font-display text-2xl text-gray-500">
-                        <p>The year 2020 marked the beginning of a new technological era, as the world grappled with the challenges posed by the COVID-19 pandemic. Undeterred by the global lockdown, I seized the opportunity to secure a coveted internship as a Developer at AB InBev.</p>
+                    <div className="mt-8 px-8 font-display text-2xl text-gray-500">
+                        <p>The year 2020 marked the beginning of a new technological era, as the world grappled with the challenges posed by the COVID-19 pandemic. Undeterred by the global lockdown, I seized the opportunity to <span className="font-bold underline">secure a coveted internship as a Developer at AB InBev.</span></p>
                         <br></br>
                     </div>
                     <div className="p-8">

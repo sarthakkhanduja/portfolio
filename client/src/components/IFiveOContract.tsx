@@ -62,10 +62,19 @@ function IFiveOContract({ closeModal }: IFiveOContractProps) {
                             PYTHON
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            TENSORFLOW
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            PYTORCH
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            cUDA
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             MACHINE LEARNING
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
-                            COMPUTER VISION
+                            AWS LAMBDA
                         </div>
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             PYTORCH
@@ -73,21 +82,43 @@ function IFiveOContract({ closeModal }: IFiveOContractProps) {
                         <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
                             AMAZON WEB SERVICES
                         </div>
-                        
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            COMPUTER VISION
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            OBJECT DETECTION
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            TEMPORAL ACTION CLASSIFICATION
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            DEEP LEARNING
+                        </div>
+                        <div className="p-2 font-display text-xs sm:text-base px-4 rounded-3xl border-[1px] border-black mr-4">
+                            ARTIFICIAL INTELLIGENCE
+                        </div>
                     </div>
 
                     {/* Content starts here */}
-                    <div className="p-8 font-display text-2xl text-gray-500">
-                        <p>As an <span className="font-bold underline">AI Consultant</span>, my responsibilities were to assist and enhance the Deep Learning Team's infrastructure.</p>
-                        <p className="mt-2">From developing Automation bots, to now architecting the solution of all the projects at hand, my responsibilities had also grown to those of an Associate Solution Architect.</p>
+                    <div className="mt-8 px-8 font-display text-2xl text-gray-500">
+                        <p>This was my first professional role after moving to Canada, and although I had no prior experience in Machine Learning, I was determined to succeed. I put in countless extra hours to learn everything I needed, refusing to let my lack of experience hold me back.</p>
+                        <p className="mt-4">As an <span className="font-bold underline">AI Consultant</span>, my responsibilities were to assist and enhance the Deep Learning Team's infrastructure.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">MLOps Integration</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Integrated client-side hardware with MLOps infrastructure using Python and TCP/IP protocols, automating real-time responses and improving operational efficiency by 73%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Collaborated with a client in East Asia to integrate their warehouse hardware with our MLOps infrastructure using Python and TCP/IP protocols. The hardware was automated to operate based on real-time outputs from our computer vision model, improving operational efficiency by 73%.</p>
                     </div>
                     <div className="p-8">
                         <p className="font-display text-2xl font-custom">Designed a Re-training Application</p>
-                        <p className="mt-3 font-display text-2xl text-gray-500">Designed a scalable solution using AWS Lambda to re-train machine learning models with new annotated data, addressing model drift and cutting downtime by 45%.</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Noticed that small changes in the camera angle feeding video to our models caused significant model drift. To address this, I designed a scalable solution using AWS Lambda to trigger alerts within our MLOps pipeline. This system captured new data from the camera, automatically annotated it using our in-house tools, and retrained the model. After fine-tuning, the team was notified to conduct a unit test before deploying to production, reducing downtime by 45%.</p>
+                    </div>
+                    <div className="p-8">
+                        <p className="font-display text-2xl font-custom">Identified Data Extraction Automation Opportunity</p>
+                        <p className="mt-3 font-display text-2xl text-gray-500">Developed a Python script to automatically extract and download video feeds from the client's warehouse cameras, continuously monitoring for annotation. This process was automated to run overnight, ensuring the data was ready for the team to work on the following morning, significantly improving efficiency and workflow continuity.</p>
+                    </div>
+                    <div className="p-8 flex flex-col justify-end items-end">
+                        <p className="font-display text-2xl font-custom italic text-gray-700">"Because of this automation, I can now sleep peacefully at night"</p>
+                        <p className="font-display text-2xl font-custom italic text-gray-700">- Colleague, i-5O</p>
                     </div>
                 </div>
             </div>
