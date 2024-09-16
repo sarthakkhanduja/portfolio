@@ -45,7 +45,7 @@ function Contact({ onScrollToHome }: ContactProps) {
                     <div className="font-display font-custom text-white  mr-16">
                         <p className="py-2 border-b-[1px] border-gray-600 cursor-pointer relative overflow-hidden group"
                         onClick={() => {
-                            window.open("https://drive.google.com/file/d/1XQELWq7PbZz9sQ2G3o4dWIaDx5251wKT/view?usp=sharing");
+                            window.open("https://drive.google.com/file/d/1_F-mDUtRqMc3u8OnhIMRu9NeUGouybsw/view?usp=sharing");
                         }}>
                             Resume
                             <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
