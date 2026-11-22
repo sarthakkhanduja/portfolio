@@ -12,15 +12,6 @@ function Contact({ onScrollToHome }: ContactProps) {
                 <p className="">Let's connect.</p>
             </div>
 
-            <div className="w-full mt-12 md:mt-20 lg:mt-[10rem]">
-                <button className="px-8 py-2 sm:py-4 w-22 rounded-[3rem] border-[1px] border-white text-xl text-white font-display font-custom hover:bg-white hover:text-black ease-in-out duration-100"
-                        onClick={() => {
-                            window.open("https://calendly.com/sarthakkhanduja")
-                        }}>
-                    Book a call
-                </button>
-            </div>
-
             <div className="w-full mt-12 mb-10 flex flex-col justify-end">
                 <p className="text-[#6B6D75] text-2xl font-display font-seminold tracking-wide">Find me elsewhere on web,</p>
                 <div className="flex flex-col sm:flex-row gap-2 flex-wrap  text-xl md:text-3xl my-6">
@@ -39,15 +30,6 @@ function Contact({ onScrollToHome }: ContactProps) {
                             window.open("https://www.github.com/sarthakkhanduja/");
                         }}>
                             GitHub
-                            <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-                        </p>
-                    </div>
-                    <div className="font-display font-custom text-white  mr-16">
-                        <p className="py-2 border-b-[1px] border-gray-600 cursor-pointer relative overflow-hidden group"
-                        onClick={() => {
-                            window.open("https://drive.google.com/file/d/1_F-mDUtRqMc3u8OnhIMRu9NeUGouybsw/view?usp=sharing");
-                        }}>
-                            Resume
                             <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
                         </p>
                     </div>
