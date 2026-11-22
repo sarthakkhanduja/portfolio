@@ -7,9 +7,9 @@ interface ContactProps {
 function Contact({ onScrollToHome }: ContactProps) {
     return(
         <div className="min-h-screen w-full bg-black px-5 md:px-10">
-            <div className={`h-48 text-white w-full font-display font-semibold text-4xl sm:text-6xl lg:text-[6rem] pt-28 lg:pt-20`}>
+            <div className="text-white w-full font-display font-semibold text-4xl sm:text-6xl lg:text-8xl pt-28 lg:pt-20">
                 <p>Nice to meet you,</p>
-                <p className="">Let's connect.</p>
+                <p>Let's connect.</p>
             </div>
 
             <div className="w-full mt-12 mb-10 flex flex-col justify-end">
@@ -64,4 +64,4 @@ function Contact({ onScrollToHome }: ContactProps) {
     )
 }
 
-export default Contact; 
+export default Contact;
