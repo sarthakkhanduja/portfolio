@@ -36,7 +36,7 @@ function About({ onClose }: AboutProps) {
 
             {/* Initial head text */}
             <div className="h-auto mx-4 sm:mx-8 mt-8 sm:mt-12 font-display text-2xl md:text-4xl font-semibold flex flex-row items-center">
-                <p className="">An experienced software engineer having worked at large-scale FMCG corporates and fast-paced startups.</p>
+                <p className="">I'm a Software Developer III at Google in Waterloo, working on Ads Safety. Previously, I worked at large-scale FMCG corporates and fast-paced startups.</p>
             </div>
 
 
@@ -66,10 +66,10 @@ function About({ onClose }: AboutProps) {
 
             {/* Availability */}
             <div className="h-auto mx-4 sm:mx-8 mt-16 font-display flex flex-col">
-                <p className="text-2xl  md:text-4xl font-semibold">Available for Opportunities</p>
+                <p className="text-2xl  md:text-4xl font-semibold">Currently at Google</p>
                 <p className="text-xl md:text-4xl mt-6 text-gray-500 font-semibold">
-                    I'm currently on the lookout for Software Engineer or Backend Developer roles. <br />
-                    I'm also available as a freelancer, so if you have a project up for grabs, I'm ready to roll up my sleeves and get to work.                    
+                    I'm currently a Software Developer III at Google in Waterloo, working on Ads Safety metrics. <br />
+                    I'm happily employed right now, so I'm not looking for new roles — but I'm always happy to connect.                    
                 </p>
             </div>
 

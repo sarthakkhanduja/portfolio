@@ -101,7 +101,7 @@ function Home({
             onClick={() => window.open("https://drive.google.com/file/d/1hgu1fB564qWMtqFQLRVILN6QANc5G5UO/view?usp=sharing")}
           >
             <Lottie animationData={blinkingAnimation} loop={true} autoplay={true} className="h-8 w-8 ml-4" />
-            <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">available for opportunities</p>
+            <p className="text-sm md:text-xl font-grotesk font-custom p-2 ml-1 text-nowrap mr-4 ">Happily employed at Google</p>
           </div>
           <div className="mt-8 lg:mt-12 font-display text-2xl sm:text-4xl md:text-5xl leading-8">
             <p className="font-display">Transforming ideas into reality,</p>
@@ -126,8 +126,8 @@ function Home({
       {/* Footer Marquee */}
       <div className={`h-16 sm:h-[90px] z-1 w-full bg-[#DFFF9C] flex justify-center items-center font-bold transition-all duration-300 ${activeComponent ? 'blur-md' : ''}`}>
         <Marquee autoFill={true}>
-          <MarqueeItem label="Based in Toronto, ON" />
-          <MarqueeItem label="3+ years of experience" />
+          <MarqueeItem label="Based in Waterloo, ON" />
+          <MarqueeItem label="2 years of experience" />
           <MarqueeItem label="Brewing Digital Solutions" />
         </Marquee>
       </div>
